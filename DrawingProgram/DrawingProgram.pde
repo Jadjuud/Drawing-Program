@@ -1,6 +1,7 @@
 //Global Variables 
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 Boolean draw=false;
+float drawingDiameter;
 
 void setup() {
   fullScreen();
@@ -12,7 +13,8 @@ void setup() {
 void draw() {
   if ( draw == true )
   {
-    line(mouseX, mouseY, pmouseX, pmouseY);
+    ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
+    //line(mouseX, mouseY, pmouseX, pmouseY);
   }//End line draw
 }//End draw()
 
