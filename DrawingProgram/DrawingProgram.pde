@@ -1,9 +1,18 @@
 //Global Variables 
+float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 
-void setup() {}//End setup()
+void setup() {
+  fullScreen();
+  population();
+  //
+  rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
+}//End setup()
 
-void draw() {}//End draw()
+void draw() {
+}//End draw()
 
-void mousePressed() {}//End mousePressed()
+void mousePressed() {
+}//End mousePressed()
 
-void keyPressed() {}//End keyPressed
+void keyPressed() {
+}//End keyPressed
