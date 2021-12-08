@@ -1,9 +1,9 @@
 //Global Variables 
 
 void textQuitButton() 
-{ 
-  }//End textQuitButton
+{
+}//End textQuitButton
 
 void text() 
 {
-  }//End text
+}//End text
