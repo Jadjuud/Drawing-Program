@@ -16,12 +16,13 @@ void quitButtonsetup()
 void quitButtonDraw()
 {
   //Quit Button Hover Over
-   if () {
+  if (mouseX>quitButtonX && mouseX<quitButtonX+quitButtondisplayWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtondisplayHeight) {
     quitButtonColour = red;
   } else {
     quitButtonColour = black;
   }//End Quit Button Hover Over
   fill(quitButtonColour);
+  noStroke(); //removes rect() outline
   rect(quitButtonX, quitButtonY, quitButtondisplayWidth, quitButtondisplayHeight);
   stroke(reset);
 }//End quitButtonDraw()
