@@ -6,6 +6,7 @@ float drawingDiameter;
 void setup() {
   fullScreen();
   population();
+  quitButtonsetup();
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
 }//End setup()
