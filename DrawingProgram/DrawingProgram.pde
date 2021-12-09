@@ -7,6 +7,7 @@ void setup() {
   fullScreen();
   population();
   quitButtonsetup();
+  textSetup();
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
 }//End setup()
