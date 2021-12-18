@@ -16,7 +16,7 @@ void textSetup() {
    String[] fontList = PFont.list(); //To list all fonts available on system
    printArray(fontList); //For listing all possible fonts to choose, then createFont
    */
-  font = createFont ("Harrington", initialSize); //Verify font exists
+  font = createFont ("Dialog.plain", initialSize); //Verify font exists
   //Tools / Create Font / Find Font / Do Not Press "OK", known bug
   //Layout with a rect(); Variables copied to text();
   rect(quitButtonX, quitButtonY, quitButtondisplayWidth, quitButtondisplayHeight);
@@ -39,7 +39,7 @@ void textCode(String string, int initialSize, float rectX, float rectY, float re
  //Fonts from OS
  String[] fontList = PFont.list(); //To list all fonts available on system
  printArray(fontList); //For listing all possible fonts to choose, then createFont
- titleFont = createFont ("Harrington", 55); //Verify font exists
+ titleFont = createFont ("Dialog.plain", 80); //Verify font exists
  //Tools / Create Font / Find Font / Do Not Press "OK", known bug
  //Layout with a rect()
  fill(purpleInk); //Ink, hexidecimal copied from Color Selector
