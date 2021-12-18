@@ -6,7 +6,7 @@
 
 //Global Variables
 PFont font; //Font Type
-int initialSize = 55; //Initial Size
+int initialSize=100; //Initial Size
 //Black Ink, see QuitButton Global Variables
 color white=#FFFFFF; //reset INK
 
@@ -23,11 +23,11 @@ void textSetup() {
 }//End textSetup()
 
 //Code to be repeated instead of copied and pasted
-void textCode(String string, int size, float rectX, float rectY, float rectdisplayWidth, float rectdisplayHeight) {
+void textCode(String string, int initialSize, float rectX, float rectY, float rectdisplayWidth, float rectdisplayHeight) {
   fill(black); //Ink, hexidecimal copied from Color Selector
   textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  textFont(font, size); //Change the number until it fits, largest font size
+  textFont(font, initialSize); //Change the number until it fits, largest font size
   //textFont() has option to combine font declaration with textSize()
   //Drawing Text
   text(string, rectX, rectY, rectdisplayWidth, rectdisplayHeight);

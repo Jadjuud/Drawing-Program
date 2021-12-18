@@ -30,7 +30,7 @@ void quitButtonDraw()
   noStroke(); //removes rect() outline
   rect(quitButtonX, quitButtonY, quitButtondisplayWidth, quitButtondisplayHeight);
   stroke(reset);
-  textCode(quitButton, 25, quitButtonX, quitButtonY, quitButtondisplayWidth, quitButtondisplayHeight);
+  textCode(quitButton, 80, quitButtonX, quitButtonY, quitButtondisplayWidth, quitButtondisplayHeight);
 }//End quitButtonDraw()
 
 void quitButtonMousePressed()
