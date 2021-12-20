@@ -8,16 +8,18 @@ void setup() {
   population();
   quitButtonsetup();
   textSetup();
+  ColorSelectorsetup();
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
 }//End setup()
 
 void draw() {
   quitButtonDraw();
+  ColorSelector();
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
   {
     ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
-    //line(mouseX, mouseY, pmouseX, pmouseY);
+    line(mouseX, mouseY, pmouseX, pmouseY);
   }//End line draw
 }//End draw()
 
