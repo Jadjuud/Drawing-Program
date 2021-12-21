@@ -9,13 +9,22 @@ void setup() {
   quitButtonsetup();
   textSetup();
   ColorSelectorsetup();
-  //
+  
+  //the drawing surface
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
+  
+  SmallBoxColorSelector();
+  
 }//End setup()
 
 void draw() {
   quitButtonDraw();
-  ColorSelector();
+  
+  ColorSelectorsetup();
+  ColorSelectordraw();
+  
+  ChangeColorDraw();
+  
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
   {
     ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
@@ -38,4 +47,10 @@ void mousePressed() {
   }//End mousePressed()
 
   void keyPressed() {
+    
+    if (keyCode == ESC) //other keycode values under this link: https://processing.org/reference/keyCode.html //<>//
+    {
+      exit();
+    }//End draw boolean
+    
   }//End keyPressed
