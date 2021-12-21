@@ -14,10 +14,9 @@ void SmallBoxColorSelector() {
 
 }
 
-void ColorSelectorsetup() {
-
+void DrawGrid() {
+  ColorSelector1 = red;
   
-  //int l[]= {90,130,170,210,250}; 
   int l[]= {90,190,290,390,490};
   int w=100;
   int t[]= {90,190,290,390,490};
@@ -26,9 +25,12 @@ void ColorSelectorsetup() {
   
   for(int i=0; i<3; i++){
     for(int j=0;j<5;j++){
+      fill(ColorSelector1);
       rect(l[j],t[i],w,h);
     }
   }
+  
+  
   
 }
 
@@ -36,26 +38,26 @@ void ChangeColorDraw(){
   
   
   if (mouseX >= 90 && mouseX <= 590 & mouseY >=90 && mouseY <= 390){
-      ColorSelector1 = blue;
-      fill(ColorSelector1);
+      ColorSelector2 = blue;
+      fill(ColorSelector2);
   }
   else{
-     ColorSelector1 = red;
-      fill(ColorSelector1);
+    ColorSelector2 = red;
+      fill(ColorSelector2);
   }
-  
+
 }
 
 //
 void ColorSelectordraw() {
-  if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1 && mouseY<ColourY1+ColourdisplayHeight1) {
-    ColorSelector1 = black;
-  } else {
-    ColorSelector1 = red;
-  }//End Quit Button Hover Over
-  fill(ColorSelector1);
-  noStroke(); //removes rect() outline
-  rect(ColourX1, ColourY1, ColourdisplayWidth1, ColourdisplayHeight1);
+  //if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1 && mouseY<ColourY1+ColourdisplayHeight1) {
+  //  ColorSelector1 = black;
+  //} else {
+  //  ColorSelector1 = black;
+  //}//End Quit Button Hover Over
+  //fill(ColorSelector1);
+  //noStroke(); //removes rect() outline
+  //rect(ColourX1, ColourY1, ColourdisplayWidth1, ColourdisplayHeight1);
   //ColorSelector1 = red;
   //fill(ColorSelector1);
   

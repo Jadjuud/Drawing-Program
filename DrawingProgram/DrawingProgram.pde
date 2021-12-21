@@ -2,33 +2,38 @@
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 Boolean draw=false;
 float drawingDiameter;
+int i=0;
 
 void setup() {
   fullScreen();
   population();
   quitButtonsetup();
   textSetup();
-  ColorSelectorsetup();
   
   //the drawing surface
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   
   SmallBoxColorSelector();
   
+  
 }//End setup()
 
 void draw() {
   quitButtonDraw();
   
-  ColorSelectorsetup();
+  
   ColorSelectordraw();
   
+  DrawGrid();
   ChangeColorDraw();
+
   
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
   {
+
     ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
     line(mouseX, mouseY, pmouseX, pmouseY);
+    
   }//End line draw
 }//End draw()
 
