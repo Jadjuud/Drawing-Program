@@ -7,6 +7,7 @@
 //Global Variables
 PFont font; //Font Type
 int initialSize=100; //Initial Size
+int eraserSize=80;
 //Black Ink, see QuitButton Global Variables
 color white=#FFFFFF; //reset INK
 
@@ -20,6 +21,9 @@ void textSetup() {
   //Tools / Create Font / Find Font / Do Not Press "OK", known bug
   //Layout with a rect(); Variables copied to text();
   rect(quitButtonX, quitButtonY, quitButtondisplayWidth, quitButtondisplayHeight);
+  //
+  font = createFont ("Dialog.plain", eraserSize);
+  rect(eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
 }//End textSetup()
 
 //Code to be repeated instead of copied and pasted
@@ -32,7 +36,16 @@ void textCode(String string, int initialSize, float rectX, float rectY, float re
   //Drawing Text
   text(string, rectX, rectY, rectdisplayWidth, rectdisplayHeight);
   fill(white); //reset
+  //
 }//End textCode()
+//
+void erasertextcode(String string, int eraserSize, float eraserX, float eraserY, float eraserdisplayWidth, float eraserdisplayHeight) {
+  fill(black);
+  textAlign (CENTER, CENTER);
+  textFont(font, eraserSize);
+  text(string, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
+  fill(white);
+}
 
 /* Code from Text-Lesson to copy above
  println("Start of Console");
