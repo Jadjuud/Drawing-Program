@@ -2,9 +2,8 @@
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 float eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight;
 Boolean draw=false;
-Boolean erase=false;
 float drawingDiameter;
-String eraser = "Eraser";
+String eraser = "Clear All";
 int i=0;
 
 void setup() {
@@ -21,6 +20,8 @@ void setup() {
 }//End setup()
 
 void draw() {
+
+  //
   quitButtonDraw();
   SmallBoxColorSelector();
   SmallBoxColorSelector2();
@@ -108,6 +109,8 @@ void mousePressed() {
     ColorSelector1 = grey;
   }
   //
+  if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight) { background(255);}
+
 }//End mousePressed()
 
 
