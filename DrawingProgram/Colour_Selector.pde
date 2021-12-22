@@ -23,7 +23,6 @@ void SmallBoxColorSelector2() {
   ColourY1 = displayHeight*2/30;
   ColourdisplayWidth1 = displayWidth*2/24;
   ColourdisplayHeight1 = displayHeight*1/16; 
-
 }
 //
 void SmallBoxColorSelector3() {
@@ -34,12 +33,81 @@ void SmallBoxColorSelector3() {
   ColourY1 = displayHeight*2/30;
   ColourdisplayWidth1 = displayWidth*2/24;
   ColourdisplayHeight1 = displayHeight*1/16; 
-
 }
+//
+void SmallBoxColorSelector4() {
+  
+  fill(green);
+  rect(ColourX1, ColourY1*4, ColourdisplayWidth1, ColourdisplayHeight1);
+  ColourX1 = displayWidth*3/4;
+  ColourY1 = displayHeight*2/30;
+  ColourdisplayWidth1 = displayWidth*2/24;
+  ColourdisplayHeight1 = displayHeight*1/16; 
+}
+//
+void SmallBoxColorSelector5() {
+  
+  fill(yellow);
+  rect(ColourX1, ColourY1*5, ColourdisplayWidth1, ColourdisplayHeight1);
+  ColourX1 = displayWidth*3/4;
+  ColourY1 = displayHeight*2/30;
+  ColourdisplayWidth1 = displayWidth*2/24;
+  ColourdisplayHeight1 = displayHeight*1/16;
+}
+//
+void SmallBoxColorSelector6() {
+  
+  fill(red);
+  rect(ColourX1+ColourX1, ColourY1, ColourdisplayWidth1, ColourdisplayHeight1);
+  ColourX1 = displayWidth*3/4;
+  ColourY1 = displayHeight*2/30;
+  ColourdisplayWidth1 = displayWidth*2/24;
+  ColourdisplayHeight1 = displayHeight*1/16;
+}
+//
+void SmallBoxColorSelector7() {
+  
+  fill(purple);
+  rect(ColourX1*2, ColourY1*2, ColourdisplayWidth1, ColourdisplayHeight1);
+  ColourX1 = displayWidth*3/4;
+  ColourY1 = displayHeight*2/30;
+  ColourdisplayWidth1 = displayWidth*2/24;
+  ColourdisplayHeight1 = displayHeight*1/16;
+}
+//
+void SmallBoxColorSelector8() {
+  
+  fill(lightblue);
+  rect(ColourX1*2, ColourY1*3, ColourdisplayWidth1, ColourdisplayHeight1);
+  ColourX1 = displayWidth*3/4;
+  ColourY1 = displayHeight*2/30;
+  ColourdisplayWidth1 = displayWidth*2/24;
+  ColourdisplayHeight1 = displayHeight*1/16;
+}
+void SmallBoxColorSelector9() {
+  
+  fill(lightgreen);
+  rect(ColourX1*2, ColourY1*4, ColourdisplayWidth1, ColourdisplayHeight1);
+  ColourX1 = displayWidth*3/4;
+  ColourY1 = displayHeight*2/30;
+  ColourdisplayWidth1 = displayWidth*2/24;
+  ColourdisplayHeight1 = displayHeight*1/16;
+}
+//
+void SmallBoxColorSelector10() {
+  
+  fill(orange);
+  rect(ColourX1*2, ColourY1*5, ColourdisplayWidth1, ColourdisplayHeight1);
+  ColourX1 = displayWidth*3/4;
+  ColourY1 = displayHeight*2/30;
+  ColourdisplayWidth1 = displayWidth*2/24;
+  ColourdisplayHeight1 = displayHeight*1/16;
+}
+//
 
 void DrawGrid() {
 
-  if (ColorSelector1 != black && ColorSelector1 != pink && ColorSelector1 != blue)
+  if (ColorSelector1 != black && ColorSelector1 != pink && ColorSelector1 != blue && ColorSelector1 != green && ColorSelector1 != yellow && ColorSelector1 != red && ColorSelector1 != purple && ColorSelector1 != lightblue && ColorSelector1 != lightgreen && ColorSelector1 != orange && ColorSelector1 != white)
     ColorSelector1=red;
   
   int l[]= {90,190,290,390,490};

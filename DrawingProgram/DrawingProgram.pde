@@ -21,6 +21,12 @@ void draw() {
   SmallBoxColorSelector();
   SmallBoxColorSelector2();
   SmallBoxColorSelector3();
+  SmallBoxColorSelector4();
+  SmallBoxColorSelector5();
+  SmallBoxColorSelector7();
+  SmallBoxColorSelector8();
+  SmallBoxColorSelector9();
+  SmallBoxColorSelector10();
   DrawGrid();
   ColorSelectordraw();
 
@@ -56,10 +62,38 @@ void mousePressed() {
     ColorSelector1 = pink; //<>//
   }
     
-  if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1*2 && mouseY<ColourY1*3+ColourdisplayHeight1) {
+  if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1*3 && mouseY<ColourY1*3+ColourdisplayHeight1) {
     ColorSelector1 = blue;
+  }
+    
+  if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1*4 && mouseY<ColourY1*4+ColourdisplayHeight1) {
+    ColorSelector1 = green;
   } 
   
+  if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1*5 && mouseY<ColourY1*5+ColourdisplayHeight1) {
+    ColorSelector1 = yellow;
+  }
+  //
+  if (mouseX>ColourX1*2 && mouseX<ColourX1*2+ColourdisplayWidth1 && mouseY>ColourY1 && mouseY<ColourY1+ColourdisplayHeight1) {
+    ColorSelector1 = red;
+  }
+  //
+  if (mouseX>ColourX1*2 && mouseX<ColourX1*2+ColourdisplayWidth1 && mouseY>ColourY1*2 && mouseY<ColourY1*2+ColourdisplayHeight1) {
+    ColorSelector1 = purple;
+  }
+  //
+  if (mouseX>ColourX1*2 && mouseX<ColourX1*2+ColourdisplayWidth1 && mouseY>ColourY1*3 && mouseY<ColourY1*3+ColourdisplayHeight1) {
+    ColorSelector1 = lightblue;
+  }
+  //
+  if (mouseX>ColourX1*2 && mouseX<ColourX1*2+ColourdisplayWidth1 && mouseY>ColourY1*4 && mouseY<ColourY1*4+ColourdisplayHeight1) {
+    ColorSelector1 = lightgreen;
+  }
+  //
+  if (mouseX>ColourX1*2 && mouseX<ColourX1*2+ColourdisplayWidth1 && mouseY>ColourY1*5 && mouseY<ColourY1*5+ColourdisplayHeight1) {
+    ColorSelector1 = orange;
+  }
+  //
 }//End mousePressed()
 
 void keyPressed() {
