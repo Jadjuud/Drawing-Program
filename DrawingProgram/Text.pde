@@ -8,6 +8,7 @@
 PFont font; //Font Type
 int initialSize=100; //Initial Size
 int eraserSize=80;
+int brushSize=80;
 //Black Ink, see QuitButton Global Variables
 color white=#FFFFFF; //reset INK
 
@@ -23,7 +24,10 @@ void textSetup() {
   rect(quitButtonX, quitButtonY, quitButtondisplayWidth, quitButtondisplayHeight);
   //
   font = createFont ("Dialog.plain", eraserSize);
-  rect(eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
+  rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
+  //
+  font = createFont ("Dialog.plain", brushSize);
+  rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
 }//End textSetup()
 
 //Code to be repeated instead of copied and pasted
@@ -44,6 +48,14 @@ void erasertextcode(String string, int eraserSize, float eraserX, float eraserY,
   textAlign (CENTER, CENTER);
   textFont(font, eraserSize);
   text(string, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
+  fill(white);
+}
+//
+void brushTextCode(String string, int brushSize, float brushX, float brushY, float brushdisplayWidth, float brushdisplayHeight) {
+  fill(black);
+  textAlign (CENTER, CENTER);
+  textFont(font, brushSize);
+  text(string, brushX, brushY, brushdisplayWidth, brushdisplayHeight);
   fill(white);
 }
 

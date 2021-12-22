@@ -12,7 +12,7 @@ void population()
   eraserdisplayHeight = displayHeight*1/16;
   //
   brushX = displayWidth*3/4;
-  brushY = displayHeight*2.33/5;
+  brushY = displayHeight*2.35/5;
   brushdisplayWidth = displayWidth*1/5;
   brushdisplayHeight = displayHeight*1/16;
 }//End population()

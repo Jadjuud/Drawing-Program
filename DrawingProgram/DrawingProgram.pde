@@ -6,6 +6,7 @@ Boolean draw=false;
 Boolean brush=false;
 float drawingDiameter;
 String eraser = "Clear All";
+String brushTool = "Brush";
 final int maxIterations = 150;
 int i=0;
 
@@ -18,10 +19,11 @@ void setup() {
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   //noLoop();
   rect(eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
-  erasertextcode(eraser, 80, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
+  erasertextcode(eraser, 90, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
   //
   fill(blue);
   rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
+  brushTextCode(brushTool, 90, brushX, brushY, brushdisplayWidth, brushdisplayHeight);
 }//End setup()
 
 void draw() {
