@@ -108,15 +108,6 @@ void mousePressed() {
     ColorSelector1 = grey;
   }
   //
-  if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight);
-  {
-    if ( erase == false)
-    {
-      erase = true;
-    } else {
-      erase = false;
-    }//End draw boolean
-  }
 }//End mousePressed()
 
 
