@@ -2,6 +2,7 @@
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 float eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight;
 Boolean draw=false;
+Boolean erase=false;
 float drawingDiameter;
 String eraser = "Eraser";
 int i=0;
@@ -17,7 +18,6 @@ void setup() {
   //noLoop();
   rect(eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
   erasertextcode(eraser, 80, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
-
 }//End setup()
 
 void draw() {
@@ -36,7 +36,7 @@ void draw() {
   SmallBoxColorSelector12();
   DrawGrid();
   ColorSelectordraw();
-  
+
   //ChangeColorDraw();
 
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
@@ -108,8 +108,16 @@ void mousePressed() {
     ColorSelector1 = grey;
   }
   //
+  if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight);
+  {
+    if ( erase == false)
+    {
+      erase = true;
+    } else {
+      erase = false;
+    }//End draw boolean
+  }
 }//End mousePressed()
-//
 
 
 void keyPressed() {
@@ -118,5 +126,4 @@ void keyPressed() {
   {
     exit();
   }
-
 }//End keyPressed
