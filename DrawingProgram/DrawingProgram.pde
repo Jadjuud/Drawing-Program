@@ -1,9 +1,12 @@
 //Global Variables  //<>// //<>//
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 float eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight;
+float brushX, brushY, brushdisplayWidth, brushdisplayHeight;
 Boolean draw=false;
+Boolean brush=false;
 float drawingDiameter;
 String eraser = "Clear All";
+final int maxIterations = 150;
 int i=0;
 
 void setup() {
@@ -11,16 +14,20 @@ void setup() {
   population();
   quitButtonsetup();
   textSetup();
-
   //the drawing surface
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   //noLoop();
   rect(eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
   erasertextcode(eraser, 80, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
+  //
+  fill(blue);
+  rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
 }//End setup()
 
 void draw() {
-
+if (mousePressed) {
+    brush();
+  }
   //
   quitButtonDraw();
   SmallBoxColorSelector();
@@ -59,7 +66,18 @@ void mousePressed() {
     } else {
       draw = false;
     }//End draw boolean
-  }//End line draw
+  }
+  //
+    if (mouseX>brushX && mouseX<brushX+brushdisplayWidth && mouseY>brushY && mouseY<brushY+brushdisplayHeight);
+  {
+    if ( brush == false)
+    {
+      brush = true;
+    } else {
+      brush = false;
+    }//End draw boolean
+  }
+  
 
   if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1 && mouseY<ColourY1+ColourdisplayHeight1) {
     ColorSelector1 = black;
@@ -109,7 +127,7 @@ void mousePressed() {
     ColorSelector1 = grey;
   }
   //
-  if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight) { background(255);}
+  if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight) { clear();}
 
 }//End mousePressed()
 
@@ -121,3 +139,24 @@ void keyPressed() {
     exit();
   }
 }//End keyPressed
+//
+void brush () {
+  int width1=30; // that be the width of your brush
+  //
+  float radx;   // Radius
+  float rady;
+  float angle1; // angle
+  float x;      // result
+  float y;
+  //
+  for (int i=0; i < maxIterations; i++) {
+    radx=random(width1);
+    rady=random(width1);
+    angle1= random(359);
+    //
+    x=(radx*cos(radians(angle1)))+mouseX;
+    y=(radx*sin(radians(angle1)))+mouseY;
+    //
+    point(x, y);
+  }
+} // func
