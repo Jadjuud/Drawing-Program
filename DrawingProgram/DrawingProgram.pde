@@ -29,6 +29,7 @@ void draw() {
   SmallBoxColorSelector9();
   SmallBoxColorSelector10();
   SmallBoxColorSelector11();
+  SmallBoxColorSelector12();
   DrawGrid();
   ColorSelectordraw();
 
@@ -96,8 +97,12 @@ void mousePressed() {
     ColorSelector1 = orange;
   }
   //
-  if (mouseX>ColourX1*1.12 && mouseX<ColourX1*1.12+ColourdisplayWidth1 && mouseY>ColourY1/6 && mouseY<ColourY1/6+ColourdisplayHeight1) {
+  if (mouseX>ColourX1*1.12 && mouseX<ColourX1*1.12+ColourdisplayWidth1 && mouseY>ColourY1*0 && mouseY<ColourY1*0+ColourdisplayHeight1) {
     ColorSelector1 = white;
+  }
+  //
+  if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1*0 && mouseY<ColourY1*0+ColourdisplayHeight1) {
+    ColorSelector1 = grey;
   }
   //
 }//End mousePressed()
