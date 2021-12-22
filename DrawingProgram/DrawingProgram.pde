@@ -25,9 +25,6 @@ void setup() {
 }//End setup()
 
 void draw() {
-if (mousePressed) {
-    brush();
-  }
   //
   quitButtonDraw();
   SmallBoxColorSelector();
@@ -52,6 +49,7 @@ if (mousePressed) {
 
     ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
     line(mouseX, mouseY, pmouseX, pmouseY);
+    brush();
   }//End line draw
 }//End draw()
 
@@ -127,7 +125,7 @@ void mousePressed() {
     ColorSelector1 = grey;
   }
   //
-  if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight) { clear();}
+  if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight) clear();
 
 }//End mousePressed()
 
@@ -141,7 +139,7 @@ void keyPressed() {
 }//End keyPressed
 //
 void brush () {
-  int width1=30; // that be the width of your brush
+  int width1=40; // that be the width of your brush
   //
   float radx;   // Radius
   float rady;
@@ -159,4 +157,4 @@ void brush () {
     //
     point(x, y);
   }
-} // func
+}
