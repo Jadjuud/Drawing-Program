@@ -1,6 +1,7 @@
-//Global Variables  //<>//
+//Global Variables  //<>// //<>//
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 Boolean draw=false;
+Boolean erase=false;
 float drawingDiameter;
 int i=0;
 
@@ -13,7 +14,6 @@ void setup() {
   //the drawing surface
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   //noLoop();
-  
 }//End setup()
 
 void draw() {
@@ -33,7 +33,7 @@ void draw() {
   DrawGrid();
   ColorSelectordraw();
 
-  
+
   //ChangeColorDraw();
 
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
@@ -56,23 +56,23 @@ void mousePressed() {
       draw = false;
     }//End draw boolean
   }//End line draw
-  
+
   if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1 && mouseY<ColourY1+ColourdisplayHeight1) {
     ColorSelector1 = black;
   } 
-  
+
   if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1*2 && mouseY<ColourY1*2+ColourdisplayHeight1) {
-    ColorSelector1 = pink; //<>//
+    ColorSelector1 = pink;
   }
-    
+
   if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1*3 && mouseY<ColourY1*3+ColourdisplayHeight1) {
     ColorSelector1 = blue;
   }
-    
+
   if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1*4 && mouseY<ColourY1*4+ColourdisplayHeight1) {
     ColorSelector1 = green;
   } 
-  
+
   if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1*5 && mouseY<ColourY1*5+ColourdisplayHeight1) {
     ColorSelector1 = yellow;
   }
@@ -106,11 +106,18 @@ void mousePressed() {
   }
   //
 }//End mousePressed()
+//
+
 
 void keyPressed() {
 
   if (keyCode == ESC) //other keycode values under this link: https://processing.org/reference/keyCode.html
   {
     exit();
+  }
+  //
+  if(keyCode == ENTER && erase == true) {
+    
+      background(255);
   }
 }//End keyPressed
