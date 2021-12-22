@@ -23,10 +23,12 @@ void draw() {
   SmallBoxColorSelector3();
   SmallBoxColorSelector4();
   SmallBoxColorSelector5();
+  SmallBoxColorSelector6();
   SmallBoxColorSelector7();
   SmallBoxColorSelector8();
   SmallBoxColorSelector9();
   SmallBoxColorSelector10();
+  SmallBoxColorSelector11();
   DrawGrid();
   ColorSelectordraw();
 
@@ -74,24 +76,28 @@ void mousePressed() {
     ColorSelector1 = yellow;
   }
   //
-  if (mouseX>ColourX1*2 && mouseX<ColourX1*2+ColourdisplayWidth1 && mouseY>ColourY1 && mouseY<ColourY1+ColourdisplayHeight1) {
+  if (mouseX>ColourX1*1.12 && mouseX<ColourX1*1.12+ColourdisplayWidth1 && mouseY>ColourY1 && mouseY<ColourY1+ColourdisplayHeight1) {
     ColorSelector1 = red;
   }
   //
-  if (mouseX>ColourX1*2 && mouseX<ColourX1*2+ColourdisplayWidth1 && mouseY>ColourY1*2 && mouseY<ColourY1*2+ColourdisplayHeight1) {
+  if (mouseX>ColourX1*1.12 && mouseX<ColourX1*1.12+ColourdisplayWidth1 && mouseY>ColourY1*2 && mouseY<ColourY1*2+ColourdisplayHeight1) {
     ColorSelector1 = purple;
   }
   //
-  if (mouseX>ColourX1*2 && mouseX<ColourX1*2+ColourdisplayWidth1 && mouseY>ColourY1*3 && mouseY<ColourY1*3+ColourdisplayHeight1) {
+  if (mouseX>ColourX1*1.12 && mouseX<ColourX1*1.12+ColourdisplayWidth1 && mouseY>ColourY1*3 && mouseY<ColourY1*3+ColourdisplayHeight1) {
     ColorSelector1 = lightblue;
   }
   //
-  if (mouseX>ColourX1*2 && mouseX<ColourX1*2+ColourdisplayWidth1 && mouseY>ColourY1*4 && mouseY<ColourY1*4+ColourdisplayHeight1) {
+  if (mouseX>ColourX1*1.12 && mouseX<ColourX1*1.12+ColourdisplayWidth1 && mouseY>ColourY1*4 && mouseY<ColourY1*4+ColourdisplayHeight1) {
     ColorSelector1 = lightgreen;
   }
   //
-  if (mouseX>ColourX1*2 && mouseX<ColourX1*2+ColourdisplayWidth1 && mouseY>ColourY1*5 && mouseY<ColourY1*5+ColourdisplayHeight1) {
+  if (mouseX>ColourX1*1.12 && mouseX<ColourX1*1.12+ColourdisplayWidth1 && mouseY>ColourY1*5 && mouseY<ColourY1*5+ColourdisplayHeight1) {
     ColorSelector1 = orange;
+  }
+  //
+  if (mouseX>ColourX1*1.12 && mouseX<ColourX1*1.12+ColourdisplayWidth1 && mouseY>ColourY1/6 && mouseY<ColourY1/6+ColourdisplayHeight1) {
+    ColorSelector1 = white;
   }
   //
 }//End mousePressed()
