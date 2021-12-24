@@ -68,7 +68,7 @@ void mousePressed() {
     }//End draw boolean
   }
   //
-    if (mouseX>brushX && mouseX<brushX+brushdisplayWidth && mouseY>brushY && mouseY<brushY+brushdisplayHeight);
+  if (mouseX>brushX && mouseX<brushX+brushdisplayWidth && mouseY>brushY && mouseY<brushY+brushdisplayHeight);
   {
     if ( brush == false)
     {
@@ -77,7 +77,7 @@ void mousePressed() {
       brush = false;
     }//End draw boolean
   }
-  
+
 
   if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1 && mouseY<ColourY1+ColourdisplayHeight1) {
     ColorSelector1 = black;
@@ -127,8 +127,11 @@ void mousePressed() {
     ColorSelector1 = grey;
   }
   //
-  if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight) clear();
+  if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight) {
+    clear();
+     background(255);
 
+  }
 }//End mousePressed()
 
 
