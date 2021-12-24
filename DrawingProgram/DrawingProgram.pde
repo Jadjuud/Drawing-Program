@@ -2,6 +2,8 @@
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 float eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight;
 float brushX, brushY, brushdisplayWidth, brushdisplayHeight;
+float pencilX, pencilY, pencildisplayWidth, pencildisplayHeight;
+float circleX, circleY, circledisplayWidth, circledisplayHeight;
 Boolean draw=false;
 Boolean brush=false;
 float drawingDiameter;
@@ -24,6 +26,10 @@ void setup() {
   fill(blue);
   rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
   brushTextCode(brushTool, 90, brushX, brushY, brushdisplayWidth, brushdisplayHeight);
+  //
+  rect(pencilX, pencilY, pencildisplayWidth, pencildisplayHeight);
+  //
+  rect(circleX, circleY, circledisplayWidth, circledisplayHeight);
 }//End setup()
 
 void draw() {
@@ -128,9 +134,8 @@ void mousePressed() {
   }
   //
   if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight) {
-    clear();
-     background(255);
-
+  fill(white);
+    rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   }
 }//End mousePressed()
 
@@ -146,19 +151,19 @@ void keyPressed() {
 void brush () {
   int width1=40; // that be the width of your brush
   //
-  float radx;   // Radius
-  float rady;
+  float radX;   // Radius
+  float radY;
   float angle1; // angle
   float x;      // result
   float y;
   //
   for (int i=0; i < maxIterations; i++) {
-    radx=random(width1);
-    rady=random(width1);
-    angle1= random(359);
+    radX=random(width1);
+    radY=random(width1);
+    angle1= random(360);
     //
-    x=(radx*cos(radians(angle1)))+mouseX;
-    y=(radx*sin(radians(angle1)))+mouseY;
+    x=(radX*cos(radians(angle1)))+mouseX;
+    y=(radX*sin(radians(angle1)))+mouseY;
     //
     point(x, y);
   }
