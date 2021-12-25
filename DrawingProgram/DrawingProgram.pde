@@ -69,7 +69,6 @@ void draw() {
     } else if (BrushOnly ==1) {
       brush();
     } else {
-
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
       line(mouseX, mouseY, pmouseX, pmouseY);
       brush();
