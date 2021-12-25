@@ -13,9 +13,10 @@ String pencilTool = "Pencil";
 String circleTool = "Circles";
 final int maxIterations = 150;
 int i=0;
-
 int CirclesOnly = 0;
-
+int PencilOnly = 0;
+int BrushOnly= 0;
+//
 void setup() {
   fullScreen();
   population();
@@ -62,14 +63,22 @@ void draw() {
 
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
   {
-    if (CirclesOnly == 0){
+    if (CirclesOnly == 1){
+      ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
+    }
+    else if (PencilOnly ==1){
+      line(mouseX, mouseY, pmouseX, pmouseY);
+    }
+    else if (BrushOnly ==1){
+      brush(); //<>//
+    }
+    else{
+      
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
       line(mouseX, mouseY, pmouseX, pmouseY);
       brush();
     }
-    else{
-      ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
-    }
+
   }//End Tools draw
 }//End draw() 
 
@@ -86,15 +95,15 @@ void mousePressed() {
     }//End draw boolean
   }
   //
-  if (mouseX>brushX && mouseX<brushX+brushdisplayWidth && mouseY>brushY && mouseY<brushY+brushdisplayHeight);
-  {
-    if ( brush == false)
-    {
-      brush = true;
-    } else {
-      brush = false;
-    }//End draw boolean
-  }
+  //if (mouseX>brushX && mouseX<brushX+brushdisplayWidth && mouseY>brushY && mouseY<brushY+brushdisplayHeight);
+  //{
+  //  if ( brush == false)
+  //  {
+  //    brush = true;
+  //  } else {
+  //    brush = false;
+  //  }//End draw boolean
+  //}
 
 
   if (mouseX>ColourX1 && mouseX<ColourX1+ColourdisplayWidth1 && mouseY>ColourY1 && mouseY<ColourY1+ColourdisplayHeight1) {
@@ -153,6 +162,17 @@ void mousePressed() {
     if (mouseX>circleX && mouseX<circleX+circledisplayWidth && mouseY>circleY && mouseY<circleY+circledisplayHeight) {
       //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); 
       CirclesOnly = 1;
+      }
+      //
+    if (mouseX>pencilX && mouseX<pencilX+pencildisplayWidth && mouseY>pencilY && mouseY<pencilY+pencildisplayHeight) {
+      PencilOnly = 1;
+      CirclesOnly=0;
+      }
+      //
+    if (mouseX>brushX && mouseX<brushX+brushdisplayWidth && mouseY>brushY && mouseY<brushY+brushdisplayHeight) {
+      BrushOnly = 1;
+       PencilOnly = 0;
+      CirclesOnly=0;
       }
 }//End mousePressed()
 
