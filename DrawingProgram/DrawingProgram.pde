@@ -1,4 +1,4 @@
-//Global Variables  //<>// //<>//
+//Global Variables  //<>// //<>// //<>//
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 float eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight;
 float brushX, brushY, brushdisplayWidth, brushdisplayHeight;
@@ -58,27 +58,22 @@ void draw() {
   SmallBoxColorSelector12();
   DrawGrid();
   ColorSelectordraw();
-
   //ChangeColorDraw();
 
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
   {
-    if (CirclesOnly == 1){
+    if (CirclesOnly == 1) {
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
-    }
-    else if (PencilOnly ==1){
+    } else if (PencilOnly ==1) {
       line(mouseX, mouseY, pmouseX, pmouseY);
-    }
-    else if (BrushOnly ==1){
-      brush(); //<>//
-    }
-    else{
-      
+    } else if (BrushOnly ==1) {
+      brush();
+    } else {
+
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
       line(mouseX, mouseY, pmouseX, pmouseY);
       brush();
     }
-
   }//End Tools draw
 }//End draw() 
 
@@ -155,25 +150,25 @@ void mousePressed() {
   }
   //
   if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight) {
-  fill(white);
-  rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
+    fill(white);
+    rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   }
   //
-    if (mouseX>circleX && mouseX<circleX+circledisplayWidth && mouseY>circleY && mouseY<circleY+circledisplayHeight) {
-      //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); 
-      CirclesOnly = 1;
-      }
-      //
-    if (mouseX>pencilX && mouseX<pencilX+pencildisplayWidth && mouseY>pencilY && mouseY<pencilY+pencildisplayHeight) {
-      PencilOnly = 1;
-      CirclesOnly=0;
-      }
-      //
-    if (mouseX>brushX && mouseX<brushX+brushdisplayWidth && mouseY>brushY && mouseY<brushY+brushdisplayHeight) {
-      BrushOnly = 1;
-       PencilOnly = 0;
-      CirclesOnly=0;
-      }
+  if (mouseX>circleX && mouseX<circleX+circledisplayWidth && mouseY>circleY && mouseY<circleY+circledisplayHeight) {
+    //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); 
+    CirclesOnly = 1;
+  }
+  //
+  if (mouseX>pencilX && mouseX<pencilX+pencildisplayWidth && mouseY>pencilY && mouseY<pencilY+pencildisplayHeight) {
+    PencilOnly = 1;
+    CirclesOnly=0;
+  }
+  //
+  if (mouseX>brushX && mouseX<brushX+brushdisplayWidth && mouseY>brushY && mouseY<brushY+brushdisplayHeight) {
+    BrushOnly = 1;
+    PencilOnly = 0;
+    CirclesOnly=0;
+  }
 }//End mousePressed()
 
 
