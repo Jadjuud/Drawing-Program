@@ -14,6 +14,8 @@ String circleTool = "Circles";
 final int maxIterations = 150;
 int i=0;
 
+int CirclesOnly = 0;
+
 void setup() {
   fullScreen();
   population();
@@ -60,12 +62,16 @@ void draw() {
 
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
   {
-
-    ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    brush();
-  }//End line draw
-}//End draw()
+    if (CirclesOnly == 0){
+      ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
+      line(mouseX, mouseY, pmouseX, pmouseY);
+      brush();
+    }
+    else{
+      ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
+    }
+  }//End Tools draw
+}//End draw() 
 
 void mousePressed() {
   quitButtonMousePressed();
@@ -143,6 +149,11 @@ void mousePressed() {
   fill(white);
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   }
+  //
+    if (mouseX>circleX && mouseX<circleX+circledisplayWidth && mouseY>circleY && mouseY<circleY+circledisplayHeight) {
+      //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); 
+      CirclesOnly = 1;
+      }
 }//End mousePressed()
 
 
