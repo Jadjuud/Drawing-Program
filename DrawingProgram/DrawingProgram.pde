@@ -9,7 +9,7 @@ Boolean draw=false;
 Boolean brush=false;
 float drawingDiameter;
 String largeEraser = "Clear All";
-String smallEraser = "Eraser";
+String smallEraser = "Eraser or Filler";
 String brushTool = "Brush";
 String pencilTool = "Pencil";
 String circleTool = "Circles";
@@ -43,7 +43,7 @@ void setup() {
   circleTextCode(circleTool, 90, circleX, circleY, circledisplayWidth, circledisplayHeight);
   //
   rect(smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
-  smalleraserTextCode(smallEraser, 90, smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
+  smalleraserTextCode(smallEraser, 82, smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
 }//End setup()
 
 void draw() {
@@ -172,6 +172,12 @@ void mousePressed() {
     BrushOnly = 1;
     PencilOnly = 0;
     CirclesOnly=0;
+  }
+  //
+    if (mouseX>smalleraserX && mouseX<smalleraserX+smalleraserdisplayWidth && mouseY>smalleraserY && mouseY<smalleraserY+smalleraserdisplayHeight) {
+      noStroke();
+      fill(white);
+      ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
   }
 }//End mousePressed()
 
