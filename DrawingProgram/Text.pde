@@ -26,6 +26,9 @@ void textSetup() {
   //
   font = createFont ("Dialog.plain", initialSize);
   rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
+  //
+    font = createFont ("Dialog.plain", initialSize);
+    rect(smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
 }//End textSetup()
 
 //Code to be repeated instead of copied and pasted
@@ -73,3 +76,10 @@ void circleTextCode(String string, int initialSize, float circleX, float circleY
   fill(white);
 }
 //
+void smalleraserTextCode(String string, int initialSize, float smalleraserX, float smalleraserY, float smalleraserdisplayWidth, float smalleraserdisplayHeight) {
+  fill(black);
+  textAlign (CENTER, CENTER);
+  textFont(font, initialSize);
+  text(string, smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
+  fill(white);
+}

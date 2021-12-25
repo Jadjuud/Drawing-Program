@@ -1,13 +1,15 @@
 //Global Variables  //<>// //<>// //<>//
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 float eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight;
+float smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight;
 float brushX, brushY, brushdisplayWidth, brushdisplayHeight;
 float pencilX, pencilY, pencildisplayWidth, pencildisplayHeight;
 float circleX, circleY, circledisplayWidth, circledisplayHeight;
 Boolean draw=false;
 Boolean brush=false;
 float drawingDiameter;
-String eraser = "Clear All";
+String largeEraser = "Clear All";
+String smallEraser = "Eraser";
 String brushTool = "Brush";
 String pencilTool = "Pencil";
 String circleTool = "Circles";
@@ -26,7 +28,7 @@ void setup() {
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   //noLoop();
   rect(eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
-  erasertextcode(eraser, 90, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
+  erasertextcode(largeEraser, 90, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
   //
   fill(blue);
   rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
@@ -39,6 +41,9 @@ void setup() {
   fill(orange);
   rect(circleX, circleY, circledisplayWidth, circledisplayHeight);
   circleTextCode(circleTool, 90, circleX, circleY, circledisplayWidth, circledisplayHeight);
+  //
+  rect(smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
+  smalleraserTextCode(smallEraser, 90, smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
 }//End setup()
 
 void draw() {

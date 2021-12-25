@@ -12,7 +12,7 @@ void population()
   eraserdisplayHeight = displayHeight*1/16;
   //
   brushX = displayWidth*3/4;
-  brushY = displayHeight*2.35/5;
+  brushY = displayHeight*3.4/5;
   brushdisplayWidth = displayWidth*1/5;
   brushdisplayHeight = displayHeight*1/16;
   //
@@ -26,4 +26,8 @@ void population()
   circledisplayWidth = displayWidth*1/5;
   circledisplayHeight = displayHeight*1/16;
   //
+  smalleraserX = displayWidth*3/4;
+  smalleraserY = displayHeight*2.35/5;
+  smalleraserdisplayWidth = displayWidth*1/5;
+  smalleraserdisplayHeight = displayHeight*1/16;
 }//End population()
