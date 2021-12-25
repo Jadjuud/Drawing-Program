@@ -9,6 +9,8 @@ Boolean brush=false;
 float drawingDiameter;
 String eraser = "Clear All";
 String brushTool = "Brush";
+String pencilTool = "Pencil";
+String circleTool = "Circles";
 final int maxIterations = 150;
 int i=0;
 
@@ -27,9 +29,13 @@ void setup() {
   rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
   brushTextCode(brushTool, 90, brushX, brushY, brushdisplayWidth, brushdisplayHeight);
   //
+  fill(grey);
   rect(pencilX, pencilY, pencildisplayWidth, pencildisplayHeight);
+  pencilTextCode(pencilTool, 90, pencilX, pencilY, pencildisplayWidth, pencildisplayHeight);
   //
+  fill(orange);
   rect(circleX, circleY, circledisplayWidth, circledisplayHeight);
+  circleTextCode(circleTool, 90, circleX, circleY, circledisplayWidth, circledisplayHeight);
 }//End setup()
 
 void draw() {
@@ -135,7 +141,7 @@ void mousePressed() {
   //
   if (mouseX>eraserX && mouseX<eraserX+eraserdisplayWidth && mouseY>eraserY && mouseY<eraserY+eraserdisplayHeight) {
   fill(white);
-    rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
+  rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   }
 }//End mousePressed()
 

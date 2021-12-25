@@ -7,8 +7,6 @@
 //Global Variables
 PFont font; //Font Type
 int initialSize=100; //Initial Size
-int eraserSize=80;
-int brushSize=80;
 //Black Ink, see QuitButton Global Variables
 color white=#FFFFFF; //reset INK
 
@@ -23,10 +21,10 @@ void textSetup() {
   //Layout with a rect(); Variables copied to text();
   rect(quitButtonX, quitButtonY, quitButtondisplayWidth, quitButtondisplayHeight);
   //
-  font = createFont ("Dialog.plain", eraserSize);
+  font = createFont ("Dialog.plain", initialSize);
   rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
   //
-  font = createFont ("Dialog.plain", brushSize);
+  font = createFont ("Dialog.plain", initialSize);
   rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
 }//End textSetup()
 
@@ -43,19 +41,35 @@ void textCode(String string, int initialSize, float rectX, float rectY, float re
   //
 }//End textCode()
 //
-void erasertextcode(String string, int eraserSize, float eraserX, float eraserY, float eraserdisplayWidth, float eraserdisplayHeight) {
+void erasertextcode(String string, int initialSize, float eraserX, float eraserY, float eraserdisplayWidth, float eraserdisplayHeight) {
   fill(black);
   textAlign (CENTER, CENTER);
-  textFont(font, eraserSize);
+  textFont(font, initialSize);
   text(string, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
   fill(white);
 }
 //
-void brushTextCode(String string, int brushSize, float brushX, float brushY, float brushdisplayWidth, float brushdisplayHeight) {
+void brushTextCode(String string, int initialSize, float brushX, float brushY, float brushdisplayWidth, float brushdisplayHeight) {
   fill(black);
   textAlign (CENTER, CENTER);
-  textFont(font, brushSize);
+  textFont(font, initialSize);
   text(string, brushX, brushY, brushdisplayWidth, brushdisplayHeight);
+  fill(white);
+}
+//
+void pencilTextCode(String string, int initialSize, float pencilX, float pencilY, float pencildisplayWidth, float pencildisplayHeight) {
+  fill(black);
+  textAlign (CENTER, CENTER);
+  textFont(font, initialSize);
+  text(string, pencilX, pencilY, pencildisplayWidth, pencildisplayHeight);
+  fill(white);
+}
+//
+void circleTextCode(String string, int initialSize, float circleX, float circleY, float circledisplayWidth, float circledisplayHeight) {
+  fill(black);
+  textAlign (CENTER, CENTER);
+  textFont(font, initialSize);
+  text(string, circleX, circleY, circledisplayWidth, circledisplayHeight);
   fill(white);
 }
 //
