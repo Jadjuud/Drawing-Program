@@ -17,7 +17,8 @@ final int maxIterations = 550;
 int i=0;
 int CirclesOnly = 0;
 int PencilOnly = 0;
-int BrushOnly= 0;
+int BrushOnly = 0;
+int EraserOnly = 0;
 //
 void setup() {
   fullScreen();
@@ -67,10 +68,13 @@ void draw() {
 
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
   {
-    if (CirclesOnly == 1) {
+    if(EraserOnly==1) {
+      noStroke();
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
     } else if (PencilOnly ==1) {
       line(mouseX, mouseY, pmouseX, pmouseY);
+    } else if (CirclesOnly == 1) {
+      ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
     } else if (BrushOnly ==1) {
       brush();
     } else {
@@ -158,26 +162,34 @@ void mousePressed() {
     rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   }
   //
+    if (mouseX>smalleraserX && mouseX<smalleraserX+smalleraserdisplayWidth && mouseY>smalleraserY && mouseY<smalleraserY+smalleraserdisplayHeight) {
+    //noStroke();
+    //fill(white);
+    //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
+    EraserOnly = 1;
+    }
+    //
   if (mouseX>circleX && mouseX<circleX+circledisplayWidth && mouseY>circleY && mouseY<circleY+circledisplayHeight) {
     //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); 
     CirclesOnly = 1;
+    PencilOnly = 0;
+    EraserOnly = 0;
+    BrushOnly = 0;
   }
   //
   if (mouseX>pencilX && mouseX<pencilX+pencildisplayWidth && mouseY>pencilY && mouseY<pencilY+pencildisplayHeight) {
     PencilOnly = 1;
     CirclesOnly=0;
+    BrushOnly = 0;
+    EraserOnly = 0;
   }
   //
   if (mouseX>brushX && mouseX<brushX+brushdisplayWidth && mouseY>brushY && mouseY<brushY+brushdisplayHeight) {
     BrushOnly = 1;
     PencilOnly = 0;
-    CirclesOnly=0;
-  }
-  //
-    if (mouseX>smalleraserX && mouseX<smalleraserX+smalleraserdisplayWidth && mouseY>smalleraserY && mouseY<smalleraserY+smalleraserdisplayHeight) {
-      noStroke();
-      fill(white);
-      ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
+    CirclesOnly = 0;
+    EraserOnly = 0;
+    
   }
 }//End mousePressed()
 
