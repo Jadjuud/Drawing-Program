@@ -13,12 +13,12 @@ String smallEraser = "Eraser or Filler";
 String brushTool = "Brush";
 String pencilTool = "Pencil";
 String circleTool = "Circles";
-final int maxIterations = 600;
-int i=0;
 int CirclesOnly = 0;
 int PencilOnly = 0;
 int BrushOnly = 0;
 int EraserOnly = 0;
+final int maxIterations = 600;
+int i=0;
 //
 void setup() {
   fullScreen();
@@ -68,7 +68,7 @@ void draw() {
 
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
   {
-    if(EraserOnly==1) {
+    if (EraserOnly==1) {
       noStroke();
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
     } else if (PencilOnly ==1) {
@@ -162,13 +162,13 @@ void mousePressed() {
     rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   }
   //
-    if (mouseX>smalleraserX && mouseX<smalleraserX+smalleraserdisplayWidth && mouseY>smalleraserY && mouseY<smalleraserY+smalleraserdisplayHeight) {
+  if (mouseX>smalleraserX && mouseX<smalleraserX+smalleraserdisplayWidth && mouseY>smalleraserY && mouseY<smalleraserY+smalleraserdisplayHeight) {
     //noStroke();
     //fill(white);
     //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
     EraserOnly = 1;
-    }
-    //
+  }
+  //
   if (mouseX>circleX && mouseX<circleX+circledisplayWidth && mouseY>circleY && mouseY<circleY+circledisplayHeight) {
     //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); 
     CirclesOnly = 1;
@@ -189,7 +189,6 @@ void mousePressed() {
     PencilOnly = 0;
     CirclesOnly = 0;
     EraserOnly = 0;
-    
   }
 }//End mousePressed()
 

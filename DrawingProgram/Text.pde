@@ -27,8 +27,8 @@ void textSetup() {
   font = createFont ("Dialog.plain", initialSize);
   rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
   //
-    font = createFont ("Dialog.plain", initialSize);
-    rect(smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
+  font = createFont ("Dialog.plain", initialSize);
+  rect(smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
 }//End textSetup()
 
 //Code to be repeated instead of copied and pasted
