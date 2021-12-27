@@ -129,14 +129,14 @@ void DrawGrid() {
   if (ColorSelector1 != black && ColorSelector1 != pink && ColorSelector1 != blue && ColorSelector1 != green && ColorSelector1 != yellow && ColorSelector1 != red && ColorSelector1 != purple && ColorSelector1 != lightblue && ColorSelector1 != lightgreen && ColorSelector1 != orange && ColorSelector1 != white && ColorSelector1 != grey)
     ColorSelector1=red;
 
-  int l[]= {90, 190, 290, 390, 490};
+  int l[]= {20, 120, 220, 320, 420};
   int w=100;
-  int t[]= {90, 190, 290, 390, 490};
+  int t[]= {1150, 1250, 1350, 1450, 1550};
   int h = 100;
 
 
   for (int i=0; i<3; i++) {
-    for (int j=0; j<5; j++) {
+  for (int j=0; j<5; j++) {
       fill(ColorSelector1);
       rect(l[j], t[i], w, h);
     }
