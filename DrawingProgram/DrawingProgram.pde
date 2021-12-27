@@ -32,7 +32,7 @@ void setup() {
   erasertextcode(largeEraser, 90, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
   //
   fill(blue);
-  rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);
+  rect(brushX, brushY, brushdisplayWidth, brushdisplayHeight);  
   brushTextCode(brushTool, 90, brushX, brushY, brushdisplayWidth, brushdisplayHeight);
   //
   fill(grey);
