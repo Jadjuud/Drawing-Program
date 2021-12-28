@@ -84,18 +84,8 @@ void smalleraserTextCode(String string, int initialSize, float smalleraserX, flo
   fill(white);
 }
 //
-
-
-
-
-
-
-
-
-
-
 void brush2TextCode(String string, int initialSize, float brushX2, float brushY2, float brushdisplayWidth2, float brushdisplayHeight2) {
-  fill(black);
+  fill(lightgreen);
   textAlign (CENTER, CENTER);
   textFont(font, initialSize);
   text(string, brushX2, brushY2, brushdisplayWidth2, brushdisplayHeight2);
@@ -103,7 +93,7 @@ void brush2TextCode(String string, int initialSize, float brushX2, float brushY2
 }
 //
 void brush3TextCode(String string, int initialSize, float brushX3, float brushY3, float brushdisplayWidth3, float brushdisplayHeight3) {
-  fill(black);
+  fill(lightgreen);
   textAlign (CENTER, CENTER);
   textFont(font, initialSize);
   text(string, brushX3, brushY3, brushdisplayWidth3, brushdisplayHeight3);
@@ -111,7 +101,7 @@ void brush3TextCode(String string, int initialSize, float brushX3, float brushY3
 }
 //
 void brush4TextCode(String string, int initialSize, float brushX4, float brushY4, float brushdisplayWidth4, float brushdisplayHeight4) {
-  fill(black);
+  fill(lightgreen);
   textAlign (CENTER, CENTER);
   textFont(font, initialSize);
   text(string, brushX4, brushY4, brushdisplayWidth4, brushdisplayHeight4);
@@ -119,7 +109,7 @@ void brush4TextCode(String string, int initialSize, float brushX4, float brushY4
 }
 //
 void brush5TextCode(String string, int initialSize, float brushX5, float brushY5, float brushdisplayWidth5, float brushdisplayHeight5) {
-  fill(black);
+  fill(lightgreen);
   textAlign (CENTER, CENTER);
   textFont(font, initialSize);
   text(string, brushX5, brushY5, brushdisplayWidth5, brushdisplayHeight5);
@@ -159,7 +149,7 @@ void pencil5TextCode(String string, int initialSize, float pencilX5, float penci
 }
 //
 void circle2TextCode(String string, int initialSize, float circleX2, float circleY2, float circledisplayWidth2, float circledisplayHeight2) {
-  fill(black);
+  fill(lightblue);
   textAlign (CENTER, CENTER);
   textFont(font, initialSize);
   text(string, circleX2, circleY2, circledisplayWidth2, circledisplayHeight2);
@@ -167,7 +157,7 @@ void circle2TextCode(String string, int initialSize, float circleX2, float circl
 }
 //
 void circle3TextCode(String string, int initialSize, float circleX3, float circleY3, float circledisplayWidth3, float circledisplayHeight3) {
-  fill(black);
+  fill(lightblue);
   textAlign (CENTER, CENTER);
   textFont(font, initialSize);
   text(string, circleX3, circleY3, circledisplayWidth3, circledisplayHeight3);
@@ -175,7 +165,7 @@ void circle3TextCode(String string, int initialSize, float circleX3, float circl
 }
 //
 void circle4TextCode(String string, int initialSize, float circleX4, float circleY4, float circledisplayWidth4, float circledisplayHeight4) {
-  fill(black);
+  fill(lightblue);
   textAlign (CENTER, CENTER);
   textFont(font, initialSize);
   text(string, circleX4, circleY4, circledisplayWidth4, circledisplayHeight4);
@@ -183,7 +173,7 @@ void circle4TextCode(String string, int initialSize, float circleX4, float circl
 }
 //
 void circle5TextCode(String string, int initialSize, float circleX5, float circleY5, float circledisplayWidth5, float circledisplayHeight5) {
-  fill(black);
+  fill(lightblue);
   textAlign (CENTER, CENTER);
   textFont(font, initialSize);
   text(string, circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);

@@ -72,39 +72,51 @@ void setup() {
   //
   fill(blue);
   rect(brushX2, brushY2, brushdisplayWidth2, brushdisplayHeight2);
+  brush2TextCode(brushTool2, 60, brushX2, brushY2, brushdisplayWidth2, brushdisplayHeight2);
   //
   fill(blue);
   rect(brushX3, brushY3, brushdisplayWidth3, brushdisplayHeight3);
+  brush3TextCode(brushTool3, 60, brushX3, brushY3, brushdisplayWidth3, brushdisplayHeight3);
   //
   fill(blue);
   rect(brushX4, brushY4, brushdisplayWidth4, brushdisplayHeight4);
+  brush4TextCode(brushTool4, 60, brushX4, brushY4, brushdisplayWidth4, brushdisplayHeight4);
   //
   fill(blue);
   rect(brushX5, brushY5, brushdisplayWidth5, brushdisplayHeight5);
+  brush5TextCode(brushTool5, 60, brushX5, brushY5, brushdisplayWidth5, brushdisplayHeight5);
   //
   fill(grey);
   rect(pencilX2, pencilY2, pencildisplayWidth2, pencildisplayHeight2);
+  pencil2TextCode(pencilTool2, 60, pencilX2, pencilY2, pencildisplayWidth2, pencildisplayHeight2);
   //
   fill(grey);
   rect(pencilX3, pencilY3, pencildisplayWidth3, pencildisplayHeight3);
+  pencil3TextCode(pencilTool3, 60, pencilX3, pencilY3, pencildisplayWidth3, pencildisplayHeight3);
   //
   fill(grey);
   rect(pencilX4, pencilY4, pencildisplayWidth4, pencildisplayHeight4);
+  pencil4TextCode(pencilTool4, 60, pencilX4, pencilY4, pencildisplayWidth4, pencildisplayHeight4);
   //
   fill(grey);
   rect(pencilX5, pencilY5, pencildisplayWidth5, pencildisplayHeight5);
+  pencil5TextCode(pencilTool5, 60, pencilX5, pencilY5, pencildisplayWidth5, pencildisplayHeight5);
   //
   fill(orange);
   rect(circleX2, circleY2, circledisplayWidth2, circledisplayHeight2);
+  circle2TextCode(circleTool2, 60, circleX2, circleY2, circledisplayWidth2, circledisplayHeight2);
   //
   fill(orange);
   rect(circleX3, circleY3, circledisplayWidth3, circledisplayHeight3);
+  circle3TextCode(circleTool3, 60, circleX3, circleY3, circledisplayWidth3, circledisplayHeight3);
   //
   fill(orange);
   rect(circleX4, circleY4, circledisplayWidth4, circledisplayHeight4);
+  circle4TextCode(circleTool4, 60, circleX4, circleY4, circledisplayWidth4, circledisplayHeight4);
   //
   fill(orange);
   rect(circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
+  circle5TextCode(circleTool5, 60, circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
   //  
 }//End setup()
 
