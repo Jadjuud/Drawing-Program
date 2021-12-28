@@ -1,4 +1,4 @@
-//Global Variables  //<>// //<>// //<>// //<>// //<>// //<>// //<>// //<>// //<>//
+//Global Variables  //<>// //<>// //<>//
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 float eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight;
 float smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight;
@@ -25,6 +25,18 @@ String smallEraser = "Eraser or Filler 1";
 String brushTool = "Brush 1";
 String pencilTool = "Pencil 1";
 String circleTool = "Circles 1";
+String brushTool2 = "Brush 2";
+String brushTool3 = "Brush 3";
+String brushTool4 = "Brush 4";
+String brushTool5 = "Brush 5";
+String pencilTool2 = "Pencil 2";
+String pencilTool3 = "Pencil 3";
+String pencilTool4 = "Pencil 4";
+String pencilTool5 = "Pencil 5";
+String circleTool2 = "Circles 2";
+String circleTool3 = "Circles 3";
+String circleTool4 = "Circles 4";
+String circleTool5 = "Circles 5";
 int CirclesOnly = 0;
 int PencilOnly = 0;
 int BrushOnly = 0;
@@ -58,28 +70,40 @@ void setup() {
   rect(smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
   smalleraserTextCode(smallEraser, 74, smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
   //
+  fill(blue);
   rect(brushX2, brushY2, brushdisplayWidth2, brushdisplayHeight2);
   //
+  fill(blue);
   rect(brushX3, brushY3, brushdisplayWidth3, brushdisplayHeight3);
   //
+  fill(blue);
   rect(brushX4, brushY4, brushdisplayWidth4, brushdisplayHeight4);
   //
+  fill(blue);
   rect(brushX5, brushY5, brushdisplayWidth5, brushdisplayHeight5);
   //
+  fill(grey);
   rect(pencilX2, pencilY2, pencildisplayWidth2, pencildisplayHeight2);
   //
+  fill(grey);
   rect(pencilX3, pencilY3, pencildisplayWidth3, pencildisplayHeight3);
   //
+  fill(grey);
   rect(pencilX4, pencilY4, pencildisplayWidth4, pencildisplayHeight4);
   //
+  fill(grey);
   rect(pencilX5, pencilY5, pencildisplayWidth5, pencildisplayHeight5);
   //
+  fill(orange);
   rect(circleX2, circleY2, circledisplayWidth2, circledisplayHeight2);
   //
+  fill(orange);
   rect(circleX3, circleY3, circledisplayWidth3, circledisplayHeight3);
   //
+  fill(orange);
   rect(circleX4, circleY4, circledisplayWidth4, circledisplayHeight4);
   //
+  fill(orange);
   rect(circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
   //  
 }//End setup()
