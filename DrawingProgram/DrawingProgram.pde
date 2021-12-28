@@ -1,4 +1,4 @@
-//Global Variables  //<>// //<>// //<>// //<>// //<>// //<>//
+//Global Variables  //<>// //<>// //<>// //<>// //<>// //<>// //<>// //<>// //<>//
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 float eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight;
 float smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight;

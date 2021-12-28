@@ -36,57 +36,57 @@ void population()
   brushdisplayWidth2 = displayWidth*1/10;
   brushdisplayHeight2 = displayHeight*1/24;
   //
-  brushX3 = ;
+  brushX3 = displayWidth*2.2/4;
   brushY3 = ;
   brushdisplayWidth3 = displayWidth*1/10;
   brushdisplayHeight3 = displayHeight*1/24;
   //
-  brushX4 = ;
+  brushX4 = displayWidth*2.2/4;
   brushY4 = ;
   brushdisplayWidth4 = displayWidth*1/10;
   brushdisplayHeight4 = displayHeight*1/24;
   //
-  brushX5 = ;
+  brushX5 = displayWidth*2.2/4;
   brushY5 = ;
   brushdisplayWidth5 = displayWidth*1/10;
   brushdisplayHeight5 = displayHeight*1/24;
   //
-  pencilX2 = ;
+  pencilX2 = displayWidth*2.2/4;
   pencilY2 = ;
   pencildisplayWidth2 = displayWidth*1/10;
   pencildisplayHeight2 = displayHeight*1/24;
   //
-  pencilX3 = ;
+  pencilX3 = displayWidth*2.2/4;
   pencilY3 = ;
   pencildisplayWidth3 = displayWidth*1/10;
   pencildisplayHeight3 = displayHeight*1/24;
   //
-  pencilX4 = ;
+  pencilX4 = pencilX3*2;
   pencilY4 = ;
   pencildisplayWidth4 = displayWidth*1/10;
   pencildisplayHeight4 = displayHeight*1/24;
   //
-  pencilX5 = ;
+  pencilX5 = pencilX3*2;
   pencilY5 = ;
   pencildisplayWidth5 = displayWidth*1/10;
   pencildisplayHeight5 = displayHeight*1/24;
   //
-  circleX2 = ;
+  circleX2 = pencilX3*2;
   circleY2 = ;
   circledisplayWidth2 = displayWidth*1/10;
   circledisplayHeight2 = displayHeight*1/24;
   //
-  circleX3 = ;
+  circleX3 = pencilX3*2;
   circleY3 = ;
   circledisplayWidth3 = displayWidth*1/10;
   circledisplayHeight3 = displayHeight*1/24;
   //
-  circleX4 = ;
+  circleX4 = pencilX3*2;
   circleY4 = ;
   circledisplayWidth4 = displayWidth*1/10;
   circledisplayHeight4 = displayHeight*1/24;
   //
-  circleX5 = ;
+  circleX5 = pencilX3*2;
   circleY5 = ;
   circledisplayWidth5 = displayWidth*1/10;
   circledisplayHeight5 = displayHeight*1/24;
