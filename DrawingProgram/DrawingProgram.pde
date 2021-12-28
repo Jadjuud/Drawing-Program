@@ -1,18 +1,30 @@
-//Global Variables  //<>// //<>// //<>//
+//Global Variables  //<>// //<>// //<>// //<>// //<>// //<>//
 float drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight;
 float eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight;
 float smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight;
 float brushX, brushY, brushdisplayWidth, brushdisplayHeight;
 float pencilX, pencilY, pencildisplayWidth, pencildisplayHeight;
 float circleX, circleY, circledisplayWidth, circledisplayHeight;
+float brushX2, brushY2, brushdisplayWidth2, brushdisplayHeight2;
+float brushX3, brushY3, brushdisplayWidth3, brushdisplayHeight3;
+float brushX4, brushY4, brushdisplayWidth4, brushdisplayHeight4;
+float brushX5, brushY5, brushdisplayWidth5, brushdisplayHeight5;
+float pencilX2, pencilY2, pencildisplayWidth2, pencildisplayHeight2;
+float pencilX3, pencilY3, pencildisplayWidth3, pencildisplayHeight3;
+float pencilX4, pencilY4, pencildisplayWidth4, pencildisplayHeight4;
+float pencilX5, pencilY5, pencildisplayWidth5, pencildisplayHeight5;
+float circleX2, circleY2, circledisplayWidth2, circledisplayHeight2;
+float circleX3, circleY3, circledisplayWidth3, circledisplayHeight3;
+float circleX4, circleY4, circledisplayWidth4, circledisplayHeight4;
+float circleX5, circleY5, circledisplayWidth5, circledisplayHeight5;
 Boolean draw=false;
 Boolean brush=false;
 float drawingDiameter;
 String largeEraser = "Clear All";
-String smallEraser = "Eraser or Filler";
-String brushTool = "Brush";
-String pencilTool = "Pencil";
-String circleTool = "Circles";
+String smallEraser = "Eraser or Filler 1";
+String brushTool = "Brush 1";
+String pencilTool = "Pencil 1";
+String circleTool = "Circles 1";
 int CirclesOnly = 0;
 int PencilOnly = 0;
 int BrushOnly = 0;
@@ -44,7 +56,32 @@ void setup() {
   circleTextCode(circleTool, 90, circleX, circleY, circledisplayWidth, circledisplayHeight);
   //
   rect(smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
-  smalleraserTextCode(smallEraser, 82, smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
+  smalleraserTextCode(smallEraser, 74, smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
+  //
+  rect(brushX2, brushY2, brushdisplayWidth2, brushdisplayHeight2);
+  //
+  rect(brushX3, brushY3, brushdisplayWidth3, brushdisplayHeight3);
+  //
+  rect(brushX4, brushY4, brushdisplayWidth4, brushdisplayHeight4);
+  //
+  rect(brushX5, brushY5, brushdisplayWidth5, brushdisplayHeight5);
+  //
+  rect(pencilX2, pencilY2, pencildisplayWidth2, pencildisplayHeight2);
+  //
+  rect(pencilX3, pencilY3, pencildisplayWidth3, pencildisplayHeight3);
+  //
+  rect(pencilX4, pencilY4, pencildisplayWidth4, pencildisplayHeight4);
+  //
+  rect(pencilX5, pencilY5, pencildisplayWidth5, pencildisplayHeight5);
+  //
+  rect(circleX2, circleY2, circledisplayWidth2, circledisplayHeight2);
+  //
+  rect(circleX3, circleY3, circledisplayWidth3, circledisplayHeight3);
+  //
+  rect(circleX4, circleY4, circledisplayWidth4, circledisplayHeight4);
+  //
+  rect(circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
+  //  
 }//End setup()
 
 void draw() {
