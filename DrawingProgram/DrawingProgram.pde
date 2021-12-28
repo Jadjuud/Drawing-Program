@@ -41,6 +41,10 @@ int CirclesOnly = 0;
 int PencilOnly = 0;
 int BrushOnly = 0;
 int EraserOnly = 0;
+int Brush2Only = 0;
+int Brush3Only = 0;
+int Brush4Only = 0;
+int Brush5Only = 0;
 final int maxIterations = 600;
 int i=0;
 //
@@ -117,7 +121,7 @@ void setup() {
   fill(orange);
   rect(circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
   circle5TextCode(circleTool5, 60, circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
-  //  
+  //
 }//End setup()
 
 void draw() {
@@ -141,19 +145,31 @@ void draw() {
 
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfacedisplayWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfacedisplayHeight)
   {
-    if (EraserOnly==1) {
+    if (EraserOnly == 1) {
       noStroke();
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
-    } else if (PencilOnly ==1) {
+    } else if (PencilOnly == 1) {
       line(mouseX, mouseY, pmouseX, pmouseY);
     } else if (CirclesOnly == 1) {
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
-    } else if (BrushOnly ==1) {
+    } else if (BrushOnly == 1) {
       brush();
+    } else if (Brush2Only == 1) {
+      brush2();
+    } else if (Brush3Only == 1) {
+      brush3();
+    } else if (Brush4Only == 1) {
+      brush4();
+    } else if (Brush5Only == 1) {
+      brush5();
     } else {
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
       line(mouseX, mouseY, pmouseX, pmouseY);
       brush();
+      brush2();
+      brush3();
+      brush4();
+      brush5();
     }
   }//End Tools draw
 }//End draw() 
@@ -263,6 +279,45 @@ void mousePressed() {
     CirclesOnly = 0;
     EraserOnly = 0;
   }
+  //
+  if (mouseX>brushX2 && mouseX<brushX2+brushdisplayWidth2 && mouseY>brushY2 && mouseY<brushY2+brushdisplayHeight2) {
+    Brush2Only = 1;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>brushX3 && mouseX<brushX3+brushdisplayWidth3 && mouseY>brushY3 && mouseY<brushY3+brushdisplayHeight3) {
+    Brush3Only = 1;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>brushX4 && mouseX<brushX4+brushdisplayWidth4 && mouseY>brushY4 && mouseY<brushY4+brushdisplayHeight4) {
+    Brush4Only = 1;
+    Brush3Only = 0;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>brushX5 && mouseX<brushX5+brushdisplayWidth5 && mouseY>brushY5 && mouseY<brushY5+brushdisplayHeight5) {
+    Brush5Only = 1;
+    Brush4Only = 0;
+    Brush3Only = 0;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
 }//End mousePressed()
 
 
@@ -274,8 +329,8 @@ void keyPressed() {
   }
 }//End keyPressed
 //
-void brush () {
-  int width1=40; // that be the width of your brush
+void brush() {
+  int width1=60; // that be the width of your brush
   //
   float radX;   // Radius
   float radY;
@@ -290,6 +345,90 @@ void brush () {
     //
     x=(radX*cos(radians(angle1)))+mouseX;
     y=(radX*sin(radians(angle1)))+mouseY;
+    //
+    point(x, y);
+  }
+}
+//
+void brush2() {
+  int width1=90; 
+  //
+  float radX2;
+  float radY2;
+  float angle1;
+  float x;
+  float y;
+  //
+  for (int i=0; i < maxIterations; i++) {
+    radX2=random(width1);
+    radY2=random(width1);
+    angle1= random(360);
+    //
+    x=(radX2*cos(radians(angle1)))+mouseX;
+    y=(radX2*sin(radians(angle1)))+mouseY;
+    //
+    point(x, y);
+  }
+}
+//
+void brush3() {
+  int width1=30; 
+  //
+  float radX3;
+  float radY3;
+  float angle1;
+  float x;
+  float y;
+  //
+  for (int i=0; i < maxIterations; i++) {
+    radX3=random(width1);
+    radY3=random(width1);
+    angle1= random(360);
+    //
+    x=(radX3*cos(radians(angle1)))+mouseX;
+    y=(radX3*sin(radians(angle1)))+mouseY;
+    //
+    point(x, y);
+  }
+}
+//
+void brush4() {
+  int width1=50; 
+  //
+  float radX4;
+  float radY4;
+  float angle1;
+  float x;
+  float y;
+  //
+  for (int i=0; i < maxIterations; i++) {
+    radX4=random(width1);
+    radY4=random(width1);
+    angle1= random(-180);
+    //
+    x=(radX4*cos(radians(angle1)))+mouseX;
+    y=(radX4*sin(radians(angle1)))+mouseY;
+    //
+    point(x, y);
+  }
+}
+//
+void brush5() {
+  int width1=50; 
+  //
+  float radX5;
+  float radY5;
+  float angle1;
+  float x;
+  float y;
+  //
+  for (int i=0; i < maxIterations; i++) {
+    radX5=random(width1);
+    radY5=random(width1);
+    angle1= random(180);
+    //
+    x=(radX5*cos(radians(angle1)))+mouseX;
+    y=(radX5*sin(radians(angle1)))+mouseY;
     //
     point(x, y);
   }
