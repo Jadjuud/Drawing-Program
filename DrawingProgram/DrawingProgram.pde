@@ -45,6 +45,14 @@ int Brush2Only = 0;
 int Brush3Only = 0;
 int Brush4Only = 0;
 int Brush5Only = 0;
+int Pencil2Only = 0;
+int Pencil3Only = 0;
+int Pencil4Only = 0;
+int Pencil5Only = 0;
+int Circles2Only = 0;
+int Circles3Only = 0;
+int Circles4Only = 0;
+int Circles5Only = 0;
 final int maxIterations = 600;
 int i=0;
 //
@@ -162,8 +170,24 @@ void draw() {
       brush4();
     } else if (Brush5Only == 1) {
       brush5();
+    } else if (Pencil2Only == 1) {
+      strokeWeight(4);
+      line(mouseX, mouseY, pmouseX, pmouseY);
+      strokeWeight(reset);
+    } else if (Pencil3Only == 1) {
+      strokeWeight(8);
+      line(mouseX, mouseY, pmouseX, pmouseY);
+      strokeWeight(reset);
+    } else if (Pencil4Only == 1) {
+      strokeWeight(12);
+      line(mouseX, mouseY, pmouseX, pmouseY);
+      strokeWeight(reset);
+    } else if (Pencil5Only == 1) {
+      strokeWeight(16);
+      line(mouseX, mouseY, pmouseX, pmouseY);
+      strokeWeight(reset);
     } else {
-      ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
+      ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); 
       line(mouseX, mouseY, pmouseX, pmouseY);
       brush();
       brush2();
@@ -252,9 +276,6 @@ void mousePressed() {
   }
   //
   if (mouseX>smalleraserX && mouseX<smalleraserX+smalleraserdisplayWidth && mouseY>smalleraserY && mouseY<smalleraserY+smalleraserdisplayHeight) {
-    //noStroke();
-    //fill(white);
-    //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
     EraserOnly = 1;
   }
   //
@@ -309,6 +330,61 @@ void mousePressed() {
   //
   if (mouseX>brushX5 && mouseX<brushX5+brushdisplayWidth5 && mouseY>brushY5 && mouseY<brushY5+brushdisplayHeight5) {
     Brush5Only = 1;
+    Brush4Only = 0;
+    Brush3Only = 0;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>pencilX2 && mouseX<pencilX2+pencildisplayWidth2 && mouseY>pencilY2 && mouseY<pencilY2+pencildisplayHeight2) {
+    Pencil2Only = 1;
+    Brush5Only = 0;
+    Brush4Only = 0;
+    Brush3Only = 0;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>pencilX3 && mouseX<pencilX3+pencildisplayWidth3 && mouseY>pencilY3 && mouseY<pencilY3+pencildisplayHeight3) {
+    Pencil3Only = 1;
+    Pencil2Only = 0;
+    Brush5Only = 0;
+    Brush4Only = 0;
+    Brush3Only = 0;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>pencilX4 && mouseX<pencilX4+pencildisplayWidth4 && mouseY>pencilY4 && mouseY<pencilY4+pencildisplayHeight4) {
+    Pencil4Only = 1;
+    Pencil3Only = 0;
+    Pencil2Only = 0;
+    Brush5Only = 0;
+    Brush4Only = 0;
+    Brush3Only = 0;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>pencilX5 && mouseX<pencilX5+pencildisplayWidth5 && mouseY>pencilY5 && mouseY<pencilY5+pencildisplayHeight5) {
+    Pencil5Only = 1;
+    Pencil4Only = 0;
+    Pencil3Only = 0;
+    Pencil2Only = 0;
+    Pencil2Only = 0;
+    Brush5Only = 0;
     Brush4Only = 0;
     Brush3Only = 0;
     Brush2Only = 0;
