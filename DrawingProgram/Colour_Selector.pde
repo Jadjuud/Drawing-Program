@@ -136,7 +136,7 @@ void DrawGrid() {
 
 
   for (int i=0; i<3; i++) {
-  for (int j=0; j<5; j++) {
+    for (int j=0; j<5; j++) {
       fill(ColorSelector1);
       rect(l[j], t[i], w, h);
     }
