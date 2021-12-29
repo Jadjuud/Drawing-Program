@@ -17,6 +17,12 @@ float circleX2, circleY2, circledisplayWidth2, circledisplayHeight2;
 float circleX3, circleY3, circledisplayWidth3, circledisplayHeight3;
 float circleX4, circleY4, circledisplayWidth4, circledisplayHeight4;
 float circleX5, circleY5, circledisplayWidth5, circledisplayHeight5;
+float smalleraserX2, smalleraserY2, smalleraserdisplayWidth2, smalleraserdisplayHeight2;
+float smalleraserX3, smalleraserY3, smalleraserdisplayWidth3, smalleraserdisplayHeight3;
+float smalleraserX4, smalleraserY4, smalleraserdisplayWidth4, smalleraserdisplayHeight4;
+float smalleraserX5, smalleraserY5, smalleraserdisplayWidth5, smalleraserdisplayHeight5;
+float smalleraserX6, smalleraserY6, smalleraserdisplayWidth6, smalleraserdisplayHeight6;
+float smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7;
 Boolean draw=false;
 Boolean brush=false;
 float drawingDiameter;
@@ -131,7 +137,17 @@ void setup() {
   rect(circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
   circle5TextCode(circleTool5, 60, circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
   //
-  //rect
+  rect(smalleraserX2, smalleraserY2, smalleraserdisplayWidth2, smalleraserdisplayHeight2);
+  //
+  rect(smalleraserX3, smalleraserY3, smalleraserdisplayWidth3, smalleraserdisplayHeight3);
+  //
+  rect(smalleraserX4, smalleraserY4, smalleraserdisplayWidth4, smalleraserdisplayHeight4);
+  //
+  rect(smalleraserX5, smalleraserY5, smalleraserdisplayWidth5, smalleraserdisplayHeight5);
+  //
+  rect(smalleraserX6, smalleraserY6, smalleraserdisplayWidth6, smalleraserdisplayHeight6);
+  //
+  rect(smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7);
 }//End setup()
 
 void draw() {

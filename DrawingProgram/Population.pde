@@ -92,4 +92,33 @@ void population()
   circledisplayWidth5 = displayWidth*1/10;
   circledisplayHeight5 = displayHeight*1/24;
   //
-}//End population()
+  smalleraserX2 = displayWidth*1.39/4;
+  smalleraserY2 = displayHeight*3.15/5;
+  smalleraserdisplayWidth2 = displayWidth*1/10;
+  smalleraserdisplayHeight2 = displayHeight*1/24;
+  //
+  smalleraserX3 = displayWidth*1.39/4;
+  smalleraserY3 = displayHeight*3.37/5;
+  smalleraserdisplayWidth3 = displayWidth*1/10;
+  smalleraserdisplayHeight3 = displayHeight*1/24;
+  //
+  smalleraserX4 = displayWidth*1.39/4;
+  smalleraserY4 = displayHeight*3.59/5;
+  smalleraserdisplayWidth4 = displayWidth*1/10;
+  smalleraserdisplayHeight4 = displayHeight*1/24;
+  //
+  smalleraserX5 = displayWidth*1.39/4;
+  smalleraserY5 = displayHeight*3.81/5;
+  smalleraserdisplayWidth5 = displayWidth*1/10;
+  smalleraserdisplayHeight5 = displayHeight*1/24;
+  //
+  smalleraserX6 = displayWidth*1.39/4;
+  smalleraserY6 = displayHeight*4.03/5;
+  smalleraserdisplayWidth6 = displayWidth*1/10;
+  smalleraserdisplayHeight6 = displayHeight*1/24;
+  //
+  smalleraserX7 = displayWidth*1.39/4;
+  smalleraserY7 = displayHeight*4.25/5;
+  smalleraserdisplayWidth7 = displayWidth*1/10;
+  smalleraserdisplayHeight7 = displayHeight*1/24;
+  }//End population()
