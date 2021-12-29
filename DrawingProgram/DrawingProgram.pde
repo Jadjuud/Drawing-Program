@@ -186,6 +186,14 @@ void draw() {
       strokeWeight(16);
       line(mouseX, mouseY, pmouseX, pmouseY);
       strokeWeight(reset);
+    } else if (Circles2Only == 1) {
+      ellipse(mouseX, mouseY, drawingDiameter*1.5, drawingDiameter*1.5);
+    } else if (Circles3Only == 1) {
+      ellipse(mouseX, mouseY, drawingDiameter*2, drawingDiameter*2);
+    } else if (Circles4Only == 1) {
+      ellipse(mouseX, mouseY, drawingDiameter*2.5, drawingDiameter*2.5);
+    } else if (Circles5Only == 1) {
+      ellipse(mouseX, mouseY, drawingDiameter/1.1, drawingDiameter/1.1);
     } else {
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); 
       line(mouseX, mouseY, pmouseX, pmouseY);
@@ -380,6 +388,80 @@ void mousePressed() {
   //
   if (mouseX>pencilX5 && mouseX<pencilX5+pencildisplayWidth5 && mouseY>pencilY5 && mouseY<pencilY5+pencildisplayHeight5) {
     Pencil5Only = 1;
+    Pencil4Only = 0;
+    Pencil3Only = 0;
+    Pencil2Only = 0;
+    Pencil2Only = 0;
+    Brush5Only = 0;
+    Brush4Only = 0;
+    Brush3Only = 0;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>circleX2 && mouseX<circleX2+circledisplayWidth2 && mouseY>circleY2 && mouseY<circleY2+circledisplayHeight2) {
+    Circles2Only = 1;
+    Pencil5Only = 0;
+    Pencil4Only = 0;
+    Pencil3Only = 0;
+    Pencil2Only = 0;
+    Pencil2Only = 0;
+    Brush5Only = 0;
+    Brush4Only = 0;
+    Brush3Only = 0;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>circleX3 && mouseX<circleX3+circledisplayWidth3 && mouseY>circleY3 && mouseY<circleY3+circledisplayHeight3) {
+    Circles3Only = 1;
+    Circles2Only = 0;
+    Pencil5Only = 0;
+    Pencil4Only = 0;
+    Pencil3Only = 0;
+    Pencil2Only = 0;
+    Pencil2Only = 0;
+    Brush5Only = 0;
+    Brush4Only = 0;
+    Brush3Only = 0;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>circleX4 && mouseX<circleX4+circledisplayWidth4 && mouseY>circleY4 && mouseY<circleY4+circledisplayHeight4) {
+    Circles4Only = 1;
+    Circles3Only = 0;
+    Circles2Only = 0;
+    Pencil5Only = 0;
+    Pencil4Only = 0;
+    Pencil3Only = 0;
+    Pencil2Only = 0;
+    Pencil2Only = 0;
+    Brush5Only = 0;
+    Brush4Only = 0;
+    Brush3Only = 0;
+    Brush2Only = 0;
+    BrushOnly = 0;
+    PencilOnly = 0;
+    CirclesOnly = 0;
+    EraserOnly = 0;
+  }
+  //
+  if (mouseX>circleX5 && mouseX<circleX5+circledisplayWidth5 && mouseY>circleY5 && mouseY<circleY5+circledisplayHeight5) {
+    Circles5Only = 1;
+    Circles4Only = 0;
+    Circles3Only = 0;
+    Circles2Only = 0;
+    Pencil5Only = 0;
     Pencil4Only = 0;
     Pencil3Only = 0;
     Pencil2Only = 0;
