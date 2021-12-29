@@ -65,6 +65,12 @@ int Circles2Only = 0;
 int Circles3Only = 0;
 int Circles4Only = 0;
 int Circles5Only = 0;
+int smallEraser2Only = 0;
+int smallEraser3Only = 0;
+int smallEraser4Only = 0;
+int smallEraser5Only = 0;
+int smallEraser6Only = 0;
+int smallEraser7Only = 0;
 final int maxIterations = 600;
 int i=0;
 
@@ -187,6 +193,7 @@ void draw() {
     if (EraserOnly == 1) {
       noStroke();
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
+      stroke(reset);
     } else if (PencilOnly == 1) {
       line(mouseX, mouseY, pmouseX, pmouseY);
     } else if (CirclesOnly == 1) {
@@ -225,6 +232,30 @@ void draw() {
       ellipse(mouseX, mouseY, drawingDiameter*2.5, drawingDiameter*2.5);
     } else if (Circles5Only == 1) {
       ellipse(mouseX, mouseY, drawingDiameter/1.1, drawingDiameter/1.1);
+    } else if (smallEraser2Only == 1) {
+      noStroke();
+      ellipse(mouseX, mouseY, drawingDiameter*2, drawingDiameter*2);
+      stroke(reset);
+    } else if (smallEraser3Only == 1) {
+      noStroke();
+      ellipse(mouseX, mouseY, drawingDiameter*4, drawingDiameter*4);
+      stroke(reset);
+    } else if (smallEraser4Only == 1) {
+      noStroke();
+      ellipse(mouseX, mouseY, drawingDiameter*6, drawingDiameter*6);
+      stroke(reset);
+    } else if (smallEraser5Only == 1) {
+      noStroke();
+      ellipse(mouseX, mouseY, drawingDiameter*8, drawingDiameter*8);
+      stroke(reset);
+    } else if (smallEraser6Only == 1) {
+      noStroke();
+      ellipse(mouseX, mouseY, drawingDiameter*10, drawingDiameter*10);
+      stroke(reset);
+    } else if (smallEraser7Only == 1) {
+      noStroke();
+      ellipse(mouseX, mouseY, drawingDiameter*12, drawingDiameter*12);
+      stroke(reset);
     } else {
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); 
       line(mouseX, mouseY, pmouseX, pmouseY);
