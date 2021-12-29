@@ -180,3 +180,51 @@ void circle5TextCode(String string, int initialSize, float circleX5, float circl
   fill(white);
 }
 //
+void smalleraser2TextCode(String string, int initialSize, float smalleraserX2, float smalleraserY2, float smalleraserdisplayWidth2, float smalleraserdisplayHeight2) {
+  fill(grey);
+  textAlign (CENTER, CENTER);
+  textFont(font, initialSize);
+  text(string, smalleraserX2, smalleraserY2, smalleraserdisplayWidth2, smalleraserdisplayHeight2);
+  fill(white);
+}
+//
+void smalleraser3TextCode(String string, int initialSize, float smalleraserX3, float smalleraserY3, float smalleraserdisplayWidth3, float smalleraserdisplayHeight3) {
+  fill(grey);
+  textAlign (CENTER, CENTER);
+  textFont(font, initialSize);
+  text(string, smalleraserX3, smalleraserY3, smalleraserdisplayWidth3, smalleraserdisplayHeight3);
+  fill(white);
+}
+//
+void smalleraser4TextCode(String string, int initialSize, float smalleraserX4, float smalleraserY4, float smalleraserdisplayWidth4, float smalleraserdisplayHeight4) {
+  fill(grey);
+  textAlign (CENTER, CENTER);
+  textFont(font, initialSize);
+  text(string, smalleraserX4, smalleraserY4, smalleraserdisplayWidth4, smalleraserdisplayHeight4);
+  fill(white);
+}
+//
+void smalleraser5TextCode(String string, int initialSize, float smalleraserX5, float smalleraserY5, float smalleraserdisplayWidth5, float smalleraserdisplayHeight5) {
+  fill(grey);
+  textAlign (CENTER, CENTER);
+  textFont(font, initialSize);
+  text(string, smalleraserX5, smalleraserY5, smalleraserdisplayWidth5, smalleraserdisplayHeight5);
+  fill(white);
+}
+//
+void smalleraser6TextCode(String string, int initialSize, float smalleraserX6, float smalleraserY6, float smalleraserdisplayWidth6, float smalleraserdisplayHeight6) {
+  fill(grey);
+  textAlign (CENTER, CENTER);
+  textFont(font, initialSize);
+  text(string, smalleraserX6, smalleraserY6, smalleraserdisplayWidth6, smalleraserdisplayHeight6);
+  fill(white);
+}
+//
+void smalleraser7TextCode(String string, int initialSize, float smalleraserX7, float smalleraserY7, float smalleraserdisplayWidth7, float smalleraserdisplayHeight7) {
+  fill(grey);
+  textAlign (CENTER, CENTER);
+  textFont(font, initialSize);
+  text(string, smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7);
+  fill(white);
+}
+//
