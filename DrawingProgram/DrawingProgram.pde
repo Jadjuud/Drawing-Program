@@ -64,6 +64,7 @@ void setup() {
   //the drawing surface
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfacedisplayWidth, drawingSurfacedisplayHeight);
   //noLoop();
+  fill(color(random(0), random(135), random(255)));
   rect(eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
   erasertextcode(largeEraser, 90, eraserX, eraserY, eraserdisplayWidth, eraserdisplayHeight);
   //
@@ -130,6 +131,7 @@ void setup() {
   rect(circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
   circle5TextCode(circleTool5, 60, circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
   //
+  //rect
 }//End setup()
 
 void draw() {
@@ -591,3 +593,4 @@ void brush5() {
     point(x, y);
   }
 }
+//
