@@ -121,4 +121,4 @@ void population()
   smalleraserY7 = displayHeight*4.25/5;
   smalleraserdisplayWidth7 = displayWidth*1/10;
   smalleraserdisplayHeight7 = displayHeight*1/24;
-  }//End population()
+}//End population()
