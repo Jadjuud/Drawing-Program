@@ -27,7 +27,7 @@ Boolean draw=false;
 Boolean brush=false;
 float drawingDiameter;
 String largeEraser = "Clear All";
-String smallEraser = "Eraser or Filler 1";
+String smallEraser = "Eraser/Filler 1";
 String brushTool = "Brush 1";
 String pencilTool = "Pencil 1";
 String circleTool = "Circles 1";
@@ -43,6 +43,12 @@ String circleTool2 = "Circles 2";
 String circleTool3 = "Circles 3";
 String circleTool4 = "Circles 4";
 String circleTool5 = "Circles 5";
+String smallEraser2 = "Eraser/Filler 2";
+String smallEraser3 = "Eraser/Filler 3";
+String smallEraser4 = "Eraser/Filler 4";
+String smallEraser5 = "Eraser/Filler 5";
+String smallEraser6 = "Eraser/Filler 6";
+String smallEraser7 = "Eraser/Filler 7";
 int CirclesOnly = 0;
 int PencilOnly = 0;
 int BrushOnly = 0;
@@ -61,6 +67,7 @@ int Circles4Only = 0;
 int Circles5Only = 0;
 final int maxIterations = 600;
 int i=0;
+
 //
 void setup() {
   fullScreen();
@@ -87,7 +94,7 @@ void setup() {
   circleTextCode(circleTool, 90, circleX, circleY, circledisplayWidth, circledisplayHeight);
   //
   rect(smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
-  smalleraserTextCode(smallEraser, 74, smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
+  smalleraserTextCode(smallEraser, 86, smalleraserX, smalleraserY, smalleraserdisplayWidth, smalleraserdisplayHeight);
   //
   fill(blue);
   rect(brushX2, brushY2, brushdisplayWidth2, brushdisplayHeight2);
@@ -138,16 +145,22 @@ void setup() {
   circle5TextCode(circleTool5, 60, circleX5, circleY5, circledisplayWidth5, circledisplayHeight5);
   //
   rect(smalleraserX2, smalleraserY2, smalleraserdisplayWidth2, smalleraserdisplayHeight2);
+  smalleraser2TextCode(smallEraser2, 43, smalleraserX2, smalleraserY2, smalleraserdisplayWidth2, smalleraserdisplayHeight2);
   //
   rect(smalleraserX3, smalleraserY3, smalleraserdisplayWidth3, smalleraserdisplayHeight3);
+  smalleraser3TextCode(smallEraser3, 43, smalleraserX3, smalleraserY3, smalleraserdisplayWidth3, smalleraserdisplayHeight3);
   //
   rect(smalleraserX4, smalleraserY4, smalleraserdisplayWidth4, smalleraserdisplayHeight4);
+  smalleraser4TextCode(smallEraser4, 43, smalleraserX4, smalleraserY4, smalleraserdisplayWidth4, smalleraserdisplayHeight4);
   //
   rect(smalleraserX5, smalleraserY5, smalleraserdisplayWidth5, smalleraserdisplayHeight5);
+  smalleraser5TextCode(smallEraser5, 43, smalleraserX5, smalleraserY5, smalleraserdisplayWidth5, smalleraserdisplayHeight5);
   //
   rect(smalleraserX6, smalleraserY6, smalleraserdisplayWidth6, smalleraserdisplayHeight6);
+  smalleraser6TextCode(smallEraser6, 43, smalleraserX6, smalleraserY6, smalleraserdisplayWidth6, smalleraserdisplayHeight6);
   //
   rect(smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7);
+  smalleraser7TextCode(smallEraser7, 43, smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7);
 }//End setup()
 
 void draw() {
