@@ -225,36 +225,36 @@ void draw() {
       line(mouseX, mouseY, pmouseX, pmouseY);
       strokeWeight(reset);
     } else if (Circles2Only == 1) {
-      ellipse(mouseX, mouseY, drawingDiameter*1.5, drawingDiameter*1.5);
-    } else if (Circles3Only == 1) {
       ellipse(mouseX, mouseY, drawingDiameter*2, drawingDiameter*2);
-    } else if (Circles4Only == 1) {
+    } else if (Circles3Only == 1) {
       ellipse(mouseX, mouseY, drawingDiameter*2.5, drawingDiameter*2.5);
+    } else if (Circles4Only == 1) {
+      ellipse(mouseX, mouseY, drawingDiameter*3, drawingDiameter*3);
     } else if (Circles5Only == 1) {
-      ellipse(mouseX, mouseY, drawingDiameter/1.1, drawingDiameter/1.1);
+      ellipse(mouseX, mouseY, drawingDiameter/1.5, drawingDiameter/1.5);
     } else if (smallEraser2Only == 1) {
       noStroke();
       ellipse(mouseX, mouseY, drawingDiameter*2, drawingDiameter*2);
       stroke(reset);
     } else if (smallEraser3Only == 1) {
       noStroke();
-      ellipse(mouseX, mouseY, drawingDiameter*4, drawingDiameter*4);
+      ellipse(mouseX, mouseY, drawingDiameter*3, drawingDiameter*3);
       stroke(reset);
     } else if (smallEraser4Only == 1) {
       noStroke();
-      ellipse(mouseX, mouseY, drawingDiameter*6, drawingDiameter*6);
+      ellipse(mouseX, mouseY, drawingDiameter*4, drawingDiameter*4);
       stroke(reset);
     } else if (smallEraser5Only == 1) {
       noStroke();
-      ellipse(mouseX, mouseY, drawingDiameter*8, drawingDiameter*8);
+      ellipse(mouseX, mouseY, drawingDiameter*5, drawingDiameter*5);
       stroke(reset);
     } else if (smallEraser6Only == 1) {
       noStroke();
-      ellipse(mouseX, mouseY, drawingDiameter*10, drawingDiameter*10);
+      ellipse(mouseX, mouseY, drawingDiameter*6, drawingDiameter*6);
       stroke(reset);
     } else if (smallEraser7Only == 1) {
       noStroke();
-      ellipse(mouseX, mouseY, drawingDiameter*12, drawingDiameter*12);
+      ellipse(mouseX, mouseY, drawingDiameter*8, drawingDiameter*8);
       stroke(reset);
     } else {
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); 
