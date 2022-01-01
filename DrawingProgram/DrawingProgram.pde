@@ -229,7 +229,7 @@ void draw() {
     } else if (Circles3Only == 1) {
       ellipse(mouseX, mouseY, drawingDiameter*2.5, drawingDiameter*2.5);
     } else if (Circles4Only == 1) {
-      ellipse(mouseX, mouseY, drawingDiameter*3, drawingDiameter*3);
+      ellipse(mouseX, mouseY, drawingDiameter*3, drawingDiameter*3 );
     } else if (Circles5Only == 1) {
       ellipse(mouseX, mouseY, drawingDiameter/1.5, drawingDiameter/1.5);
     } else if (smallEraser2Only == 1) {
