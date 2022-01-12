@@ -23,6 +23,7 @@ float smalleraserX4, smalleraserY4, smalleraserdisplayWidth4, smalleraserdisplay
 float smalleraserX5, smalleraserY5, smalleraserdisplayWidth5, smalleraserdisplayHeight5;
 float smalleraserX6, smalleraserY6, smalleraserdisplayWidth6, smalleraserdisplayHeight6;
 float smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7;
+float musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight;
 Boolean draw=false;
 Boolean brush=false;
 float drawingDiameter;
@@ -73,7 +74,6 @@ int smallEraser6Only = 0;
 int smallEraser7Only = 0;
 final int maxIterations = 600;
 int i=0;
-
 //
 void setup() {
   fullScreen();
@@ -167,6 +167,8 @@ void setup() {
   //
   rect(smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7);
   smalleraser7TextCode(smallEraser7, 43, smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7);
+  //
+  rect(musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
 }//End setup()
 
 void draw() {

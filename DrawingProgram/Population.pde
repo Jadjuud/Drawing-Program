@@ -121,4 +121,9 @@ void population()
   smalleraserY7 = displayHeight*4.25/5;
   smalleraserdisplayWidth7 = displayWidth*1/10;
   smalleraserdisplayHeight7 = displayHeight*1/24;
+  //
+  musicPlayerX = displayWidth*2.3/5;
+  musicPlayerY = displayHeight*3.6/5;
+  musicPlayerdisplayWidth = displayWidth*1/10;
+  musicPlayerdisplayHeight = displayHeight*1/6;
 }//End population()
