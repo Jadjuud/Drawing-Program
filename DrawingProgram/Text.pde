@@ -228,3 +228,11 @@ void smalleraser7TextCode(String string, int initialSize, float smalleraserX7, f
   fill(white);
 }
 //
+void musicProgramTextCode(String string, int initialSize, float musicPlayerX, float musicPlayerY, float musicPlayerdisplayWidth, float musicPlayerdisplayHeight) {
+  fill(black);
+  textAlign (CENTER, TOP);
+  textFont(font, initialSize);
+  text(string, musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
+  fill(white);
+}
+//

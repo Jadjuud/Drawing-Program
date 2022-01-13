@@ -50,6 +50,7 @@ String smallEraser4 = "Eraser/Filler 4";
 String smallEraser5 = "Eraser/Filler 5";
 String smallEraser6 = "Eraser/Filler 6";
 String smallEraser7 = "Eraser/Filler 7";
+String musicProgram = "Music Player";
 int CirclesOnly = 0;
 int PencilOnly = 0;
 int BrushOnly = 0;
@@ -169,6 +170,7 @@ void setup() {
   smalleraser7TextCode(smallEraser7, 43, smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7);
   //
   rect(musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
+  musicProgramTextCode(musicProgram, 35 , musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
 }//End setup()
 
 void draw() {
