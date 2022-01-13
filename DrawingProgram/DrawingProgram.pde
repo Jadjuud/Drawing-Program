@@ -170,7 +170,7 @@ void setup() {
   smalleraser7TextCode(smallEraser7, 43, smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7);
   //
   rect(musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
-  musicProgramTextCode(musicProgram, 35 , musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
+  musicProgramTextCode(musicProgram, 35, musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
 }//End setup()
 
 void draw() {
