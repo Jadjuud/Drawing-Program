@@ -199,7 +199,9 @@ void draw() {
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
       stroke(reset);
     } else if (PencilOnly == 1) {
+      stroke(blue);
       line(mouseX, mouseY, pmouseX, pmouseY);
+      stroke(reset);
     } else if (CirclesOnly == 1) {
       ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);
     } else if (BrushOnly == 1) {
