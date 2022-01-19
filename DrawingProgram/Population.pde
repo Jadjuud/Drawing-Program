@@ -126,4 +126,14 @@ void population()
   musicPlayerY = displayHeight*3.75/5;
   musicPlayerdisplayWidth = displayWidth*3.35/10;
   musicPlayerdisplayHeight = displayHeight*1.46/6;
+  //
+  rectXpic1 = displayWidth*0/4;
+  rectYpic1 = displayHeight*0/4;
+  rectdisplayWidthPic1 = displayWidth;
+  rectdisplayHeightPic1 = displayHeight;
+  pic1ImageWidthRatio = 626/626;
+  pic1displayHeightRatio = 626/390;
+  picX1= rectXpic1;
+  picY1 = rectYpic1;
+  picdisplayWidth1 = rectdisplayWidthPic1*pic1ImageWidthRatio;
 }//End population()

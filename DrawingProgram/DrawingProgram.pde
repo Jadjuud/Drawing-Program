@@ -75,6 +75,10 @@ int smallEraser6Only = 0;
 int smallEraser7Only = 0;
 final int maxIterations = 600;
 int i=0;
+PImage pic1;
+float rectXpic1, rectYpic1, rectdisplayWidthPic1, rectdisplayHeightPic1;
+float pic1ImageWidthRatio, pic1displayHeightRatio;
+float picX1, picY1, picdisplayWidth1, picdisplayHeight1;
 //
 void setup() {
   fullScreen();
@@ -171,9 +175,13 @@ void setup() {
   //
   rect(musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
   musicProgramTextCode(musicProgram, 35, musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
+  //
+  pic1 = loadImage("../DrawingProgramImage.jpg"); // 626 x 390
 }//End setup()
 
 void draw() {
+  rect(rectXpic1, rectYpic1, rectdisplayWidthPic1, rectdisplayHeightPic1);
+  image(pic1, rectXpic1, rectYpic1, rectdisplayWidthPic1, rectdisplayHeightPic1);
   //
   quitButtonDraw();
   SmallBoxColorSelector();
