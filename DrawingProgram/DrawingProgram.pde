@@ -284,6 +284,15 @@ void draw() {
       brush5();
     }
   }//End Tools draw
+  //
+  if (mouseX>powerButtonX && mouseX<powerButtonX+powerButtondisplayWidth && mouseY>powerButtonY && mouseY<powerButtonY+powerButtondisplayHeight) {
+    buttonColour = green;
+    hoverOverButtonFill();
+  } else {
+    buttonColour = blue;
+    hoverOverButtonFill();
+  } 
+  //
 }//End draw() 
 
 void mousePressed() {
@@ -697,6 +706,7 @@ void mousePressed() {
     EraserOnly = 0;
   }
   //
+  if (mouseX>powerButtonX && mouseX<powerButtonX+powerButtondisplayWidth && mouseY>powerButtonY && mouseY<powerButtonY+powerButtondisplayHeight) exit();
 }//End mousePressed()
 
 
@@ -814,3 +824,10 @@ void brush5() {
   }
 }
 //
+void hoverOverButtonFill() {
+  fill(buttonColour);
+  noStroke();
+  rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
+  stroke(1); //reset stroke to 1 pixel
+  fill(reset);
+} //End hoverOverButtonFill()
