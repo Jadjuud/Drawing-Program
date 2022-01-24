@@ -236,3 +236,11 @@ void musicProgramTextCode(String string, int initialSize, float musicPlayerX, fl
   fill(white);
 }
 //
+void PowerButtonText(String string, int initialSize, float powerButtonX, float powerButtonY, float powerButtondisplayWidth, float powerButtondisplayHeight) {
+  fill(black);
+  textAlign (CENTER, CENTER);
+  textFont(font, initialSize);
+  text(string, powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
+  fill(white);
+}
+//

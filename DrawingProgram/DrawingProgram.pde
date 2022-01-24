@@ -24,6 +24,10 @@ float smalleraserX5, smalleraserY5, smalleraserdisplayWidth5, smalleraserdisplay
 float smalleraserX6, smalleraserY6, smalleraserdisplayWidth6, smalleraserdisplayHeight6;
 float smalleraserX7, smalleraserY7, smalleraserdisplayWidth7, smalleraserdisplayHeight7;
 float musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight;
+float rectXpic1, rectYpic1, rectdisplayWidthPic1, rectdisplayHeightPic1;
+float pic1ImageWidthRatio, pic1displayHeightRatio;
+float picX1, picY1, picdisplayWidth1, picdisplayHeight1;
+float powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight;
 Boolean draw=false;
 Boolean brush=false;
 float drawingDiameter;
@@ -51,6 +55,7 @@ String smallEraser5 = "Eraser/Filler 5";
 String smallEraser6 = "Eraser/Filler 6";
 String smallEraser7 = "Eraser/Filler 7";
 String musicProgram = "Music Player";
+String powerButton = "Power";
 int CirclesOnly = 0;
 int PencilOnly = 0;
 int BrushOnly = 0;
@@ -76,12 +81,7 @@ int smallEraser7Only = 0;
 final int maxIterations = 600;
 int i=0;
 PImage pic1;
-float rectXpic1, rectYpic1, rectdisplayWidthPic1, rectdisplayHeightPic1;
-float pic1ImageWidthRatio, pic1displayHeightRatio;
-float picX1, picY1, picdisplayWidth1, picdisplayHeight1;
-String powerButton = "Power";
 color buttonColour;
-float powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight;
 //
 void setup() {
   fullScreen();
@@ -289,9 +289,11 @@ void draw() {
     buttonColour = green;
     hoverOverButtonFill();
   } else {
-    buttonColour = blue;
+    buttonColour = red;
     hoverOverButtonFill();
   } 
+  //
+  PowerButtonText(powerButton, 30, powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
   //
 }//End draw() 
 

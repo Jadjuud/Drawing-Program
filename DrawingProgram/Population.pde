@@ -137,8 +137,8 @@ void population()
   picY1 = rectYpic1;
   picdisplayWidth1 = rectdisplayWidthPic1*pic1ImageWidthRatio;
   //
-  powerButtonX = displayWidth*4.663/5;
+  powerButtonX = displayWidth*4.62/5;
   powerButtonY = displayHeight*3.75/5;
-  powerButtondisplayWidth = displayWidth*1/16;
-  powerButtondisplayHeight = displayHeight*1/20;
+  powerButtondisplayWidth = displayWidth*1/14;
+  powerButtondisplayHeight = displayHeight*1/16;
 }//End population()
