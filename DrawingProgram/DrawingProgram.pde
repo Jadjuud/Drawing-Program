@@ -79,6 +79,9 @@ PImage pic1;
 float rectXpic1, rectYpic1, rectdisplayWidthPic1, rectdisplayHeightPic1;
 float pic1ImageWidthRatio, pic1displayHeightRatio;
 float picX1, picY1, picdisplayWidth1, picdisplayHeight1;
+String powerButton = "Power";
+color buttonColour;
+float powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight;
 //
 void setup() {
   fullScreen();
@@ -180,6 +183,7 @@ void setup() {
   rect(musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
   musicProgramTextCode(musicProgram, 35, musicPlayerX, musicPlayerY, musicPlayerdisplayWidth, musicPlayerdisplayHeight);
   //
+  rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
 }//End setup()
 
 void draw() {
